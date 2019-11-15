@@ -9,20 +9,16 @@
     
 }
 
-body{
+.pagina1{
     background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-}
-
-.textoBienvenidos{
-    font-size: 5vw;
-    color: white;
-    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
     text-align: center;
-    font-family: 'UnifrakturMaguntia', cursive;
 }
 
 .imagenBienvenida{
@@ -31,6 +27,29 @@ body{
     margin: auto;
     float:center;
     max-width: 100%;
-      
+}
+
+.pagina1:after{
+    background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    opacity: .4;
+}
+
+.reseña{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    bottom: 22%;
+    max-width: 100%;
+    width:30%;
+    font-size: 90%;
+    position: absolute;
+    bottom: 30%;
+    text-shadow: 0px 1px 1px  white;
 
 }
