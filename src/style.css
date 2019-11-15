@@ -1,47 +1,36 @@
-.blackBackground{
-    background-image: url(https://www.elsetge.cat/myimg/f/12-129738_harry-potter-wallpaper-best-of-wallpapers-hd-de.jpg);
-    
-    
-
-}
-
-.blackBackground:before{
-    background: black;
-    content: "";
-    width: 717;
-    height: 403px;
-    position: absolute;
-    margin: 0%;
-    opacity: .7
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 
-.textoBienvenida{
-    color: white;
-    font-family: 'Metamorphous', cursive;
-    font-size: 1.5em;
-    position: absolute;
-    left: 20%;
+#pagina2{
+    display: none;
     
 }
 
-.logo-harry{
-    position: absolute;
-    left: 24%;
-
+body{
+    background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-.footer{
+.textoBienvenidos{
+    font-size: 5vw;
     color: white;
-    position: absolute;
-    font-size: 10px;
- 
+    position: relative;
+    text-align: center;
+    font-family: 'UnifrakturMaguntia', cursive;
 }
 
-.bottonInicio{
-    color: white;
-    opacity: .7;
-    background: black;
-    border-radius: 10px;
+.imagenBienvenida{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    float:center;
+    max-width: 100%;
+      
 
 }
