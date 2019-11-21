@@ -25,6 +25,8 @@ for(let i=0; i<infoGeneral.length; i++){
   mostrar.appendChild(newDiv);  }
 
 
+  
+
 
 
 

@@ -13,42 +13,53 @@
   <body>
     
     <div id="pagina1"class="pagina1" >
-      <div class="imagenBienvenida"><img src="images/bienvenido.png" /> </div>
+      
+      <img src="images/bienvenido.png" width="650" /> 
+      
+        
       <div class="reseña">
-        <p>Harry Potter es una serie de novelas fantásticas en la que se describen las aventuras del joven aprendiz de magia y hechicería  y sus amigos. El argumento se centra en la lucha entre Harry Potter y el malvado mago Lord Voldemort, quien asesinó a los padres de Harry en su afán de conquistar el mundo mágico.
-        </p>
+        <p>Harry Potter es una serie de novelas fantásticas en la que se describen <br>las aventuras del joven aprendiz de magia y hechicería  y sus amigos. <br>El argumento se centra en la lucha entre Harry Potter y el malvado mago <br>Lord Voldemort, quien asesinó a los padres de Harry en su afán de <br>  conquistar el mundo mágico.</p>
       </div>  
       
-      <img src="images/logo harry poter.png" width="350"/>
-      <button id="conocemas">Conoce más</button>
+      <div class="logo-harry">
+        <img src="images/logo harry poter.png" width="350"/>
+      </div>  
+
+      <div class="conocemas">
+        <input type="submit" id="conocemas" value="Conoce más" ></input>
+      </div>  
     </div>
-    
+      
     <div id="pagina2">
       <div class="nav">
-      <nav> <img src="images/logo harry poter.png" width="100"/> </nav>
+        <nav> <img src="images/logo harry poter.png" width="100"/> </nav>
+      </div>
+        
+      <div class="filtrados">
+        <button>HUMANOS</button>
+        
+        <select>
+          <option value="Casas">Casas</option>
+          <option value="Gryffindor">Gryffindor</option>
+          <option value="Ravenclaw">Ravenclaw</option>
+          <option value="Slytherin">Slytherin</option>
+          <option value="Hufflepuff">Hufflepuff</option>
+        </select>
+
+        <button>FEMENINO</button>
+
+        <button>MASCULINO</button>
       </div>
       
-    <div class="filtrados">
-    <button>HUMANOS</button>
-    <select>
-        <option value="Casas">Casas</option>
-        <option value="Gryffindor">Gryffindor</option>
-        <option value="Ravenclaw">Ravenclaw</option>
-        <option value="Slytherin">Slytherin</option>
-        <option value="Hufflepuff">Hufflepuff</option>
-      </select>
-      <button>FEMENINO</button>
-      <button>MASCULINO</button>
-    </div>
-    <div id="mostrarPersonajes">
-
-    </div>
+      <div id="mostrarPersonajes">
+      </div>
 
 
 
     </div>
-    <div id="root"></div>
-    
+      <div id="root">
+      </div>
+      
     <script type="module" src="main.js"></script>
-    </body>
+  </body>
 </html>

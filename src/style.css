@@ -1,7 +1,7 @@
 
 *{
     margin: 0px;
-    padding: 0px;
+
 }
 
 
@@ -13,37 +13,36 @@
     background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     background-attachment: fixed;
     height: 100vh;
     width: 100vw;
     margin: 0;
-    text-align: center;
-    position: relative;
-
+    position: flex;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;    
 }
 .pagina1:before{
     background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
-    background-repeat: repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     content: "";
     width: 100vw;
     height: 100vh;
     position: absolute;
-    opacity: .6;
+    opacity: .5;
 }
 
-.pagina1 img, p, button{
+.pagina1 img, p, input{
     position: relative;
-
+    font-family: 'Josefin Sans', sans-serif;
 }
 
+.conocemas{
+    position: absolute;
+    bottom: 10%;
+    color: black;
+}
 
 .reseña{
     color: white;
@@ -52,8 +51,11 @@
     font-size: 90%;
     text-align: center;
     margin: auto;
-};
-
+    position: absolute;
+    bottom: 20%;
+    margin: 2px;
+    padding: 20px;
+}
 
 .nav {
     text-align: center;
