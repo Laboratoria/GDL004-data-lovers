@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;    
+    
 }
 .pagina1:before{
     background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
@@ -38,11 +39,27 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
+
 .conocemas{
     position: absolute;
     bottom: 10%;
-    color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5px;
+    background: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 130px;
+    height: 30px;
 }
+
+.conocemas:hover{
+    border-color:white;
+    color: black;
+    background: white;
+}
+
 
 .reseña{
     color: white;
@@ -63,3 +80,30 @@
     background-color: #333;
 }
 
+.filtrados{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.casas{
+    background-color: transparent;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 3px;
+    margin: 5px;
+}
+
+.casas:hover{
+    color: black;
+    background: rgb(3, 67, 119);
+}
+
+.personajes{
+    background-color: #333;
+    width: 2000px;
+    height: 700px;
+    
+}

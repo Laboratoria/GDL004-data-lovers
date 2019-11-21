@@ -13,10 +13,7 @@ let mostrar = document.getElementById("mostrarPersonajes");
 let infoGeneral = allPeople(POTTER);
 console.log(infoGeneral)
 
-//function separaObj(){
-//  forfor(let i=0; i<infoGeneral.length; i++){ )
-//}
-
+fun
 
 
 for(let i=0; i<infoGeneral.length; i++){
