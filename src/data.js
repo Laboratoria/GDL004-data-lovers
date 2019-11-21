@@ -14,11 +14,17 @@ export const allPeople =(POTTER)=>{
  let personajes =[];
  
   POTTER.forEach((element) => {
-    personajes.push({
-      imagen: POTTER.image,
-      nombre: POTTER.name,
-      actor: POTTER.actor     
+      personajes.push({
+      imagen: element.image,
+      nombre: element.name,
+      actor: element.actor     
     });
+
  }); 
  return personajes;
+
+ 
 }
+
+
+

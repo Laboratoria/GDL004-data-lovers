@@ -1,5 +1,5 @@
  import POTTER from './data/potter/potter.js';
- console.log(POTTER);
+ 
  import {especies, allPeople} from './data.js';
  
 // botton1  para ir a la siguiente Pagina
@@ -9,5 +9,22 @@ boton1.addEventListener("click", () => {
     document.getElementById("pagina1").style.display = "none";
   document.getElementById("pagina2").style.display = "block";
 });
-  var ana =allPeople(POTTER);
-  console.log (ana)
+let mostrar = document.getElementById("mostrarPersonajes");
+let infoGeneral = allPeople(POTTER);
+console.log(infoGeneral)
+
+//function separaObj(){
+//  forfor(let i=0; i<infoGeneral.length; i++){ )
+//}
+
+
+
+for(let i=0; i<infoGeneral.length; i++){
+  let newDiv = document.createElement('div');
+  newDiv.textContent = infoGeneral[i].nombre;
+  mostrar.appendChild(newDiv);  }
+
+
+
+
+
