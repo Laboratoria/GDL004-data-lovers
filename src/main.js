@@ -38,7 +38,7 @@ for(let i=0; i<infoGeneral.length; i++){
   divImg.appendChild(img)
 // esta linea le agrega el atributo del src a la imagen
   img.setAttribute("src",infoGeneral[i].imagen);
-  img.setAttribute("width",150);
+  img.setAttribute("width",120);
   // agregando una clase al p1
   p1.classList.add("nombre-actor-personaje");
 // esta linea le agrega al elemento p1 el nombre del personaje

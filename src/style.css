@@ -82,11 +82,7 @@
 
 }
 
-.nav {
-    text-align: center;
-    margin: auto;
-    background-color: #333;
-}
+
 
 .filtrados{
     text-align: center;
@@ -109,7 +105,87 @@
     background: rgb(3, 67, 119);
 }
 
-.mostrarPersonajes {
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lato';
+	margin: 0;
+}
+
+.nav {
+    text-align: center;
+    margin: auto;
+    background-color: #333;
+}
+
+ h1 {
+	letter-spacing: 3px;
+} 
+
+
+.personajes {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.mostrarPersonajes{
+	background-color: #eee;
+	border-radius: 20px;
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+}
+.centro{
+    text-align: center;
+}
+.mostrarPersonajes .img-container {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.mostrarPersonajes .img-container img {
+	margin-top: 20px;
+	max-width: 90%;
+}
+
+.mostrarPersonajes .info {
+	margin-top: 20px;
+	font-size: 0.8em;
+}
+
+.mostrarPersonajes .number {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	font-size: 10px;
+	padding: 5px 10px;
+}
+
+.mostrarPersonajes .name {
+	margin: 13px 0 7px;
+	letter-spacing: 1px;
+}
+
+
+
+ .mostrarPersonajes {
   z-index: 0;
   width: 100%;
   display: flex;
@@ -125,7 +201,13 @@
     padding: 20px;
   box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
+    justify-content: space-around;
     transition: 0.4s;
+  }
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
   }
 .img-personajes {
     border-radius: 40px;
@@ -136,4 +218,4 @@
 } 
 .nombre-actor-personaje {
     text-align: center;
-}
+} 
