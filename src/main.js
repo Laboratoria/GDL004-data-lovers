@@ -23,7 +23,6 @@ lista.classList.add("personajes");
 
 // guarda el valor de las casas a filtrar
 let botonFiltrar1 = document.getElementById("casa1").value;
-botonFiltrar1.addEventListener("click",filtradoCasas)
 let botonFiltrar2 = document.getElementById("casa2").value;
 let botonFiltrar3 = document.getElementById("casa3").value;
 let botonFiltrar4 = document.getElementById("casa4").value;
@@ -67,7 +66,7 @@ for(let i=0; i<infoGeneral.length; i++){
 }
 mostrar.appendChild(lista);
 
-/*
+
 function filtradoCasas(){
   for(let i=0; i<houses.length; i++){
     //se crean todos los elementos del html
@@ -108,4 +107,4 @@ function filtradoCasas(){
     mostrar.appendChild(lista);
 };
 
-*/
+
