@@ -22,9 +22,12 @@ export const allPeople =(POTTER)=>{
 
  }); 
  return personajes;
-
- 
 }
 
+export const casas=(POTTER)=>{
+  return POTTER.filter((casas)=> {
 
+    return casas.house ==="Gryffindor";
+    });
+} 
 
