@@ -1,7 +1,37 @@
-/* Manejo de data */
+//Funciones
+import potter from './data/potter/potter.js';
 
-// esta es una función de ejemplo
+export const nombres = (potter) => {
+  return potter.filter((characters)=>{
+    let characterees = characters.name
+    return characterees;
+  });
+}
 
-export const example = () => {
-  return 'example';
-};
+export const house = (potter)=> {
+  return potter.filter((houses)=>{
+    if(houses.house === "Gryffindor"){
+      return houses
+
+
+    }
+  })
+}
+
+
+
+
+
+
+
+
+
+
+export const gender = potter.filter((genders)=>{
+   return genders;
+})
+export const foto = potter.filter((image)=>{
+   return image
+})
+//console.log(nombres) //me muestra TODA LA DATA
+//console.log(nombres[0].name) //Muestra el nombre del primer array

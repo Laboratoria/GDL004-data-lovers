@@ -1,15 +1,21 @@
-/**
- * import POKEMON from './data/pokemon/pokemon.js'
- * import LoL from './data/lol/lol.js'
- * import POTTER from './data/potter/potter.js'
- */
+//AQUI TODA LA DATA DOM
+import potter from './data/potter/potter.js';
+//importa las variables de data.js
+import {nombres, house} from './data.js';
+//console.log(nombres(potter)) // retorna todo el array
 
-import { example } from './data.js';
+//document.getElementById("content").innerHTML += nombres(potter)
+//si "cambia" hacer la funcion select
+document.getElementById("mySelect").addEventListener("change", select)
+function select() {
+  //var x = document.getElementByValue("mySelect").value
+  var myselect = document.getElementById("mySelect").value;
+  document.getElementById("content").innerHTML = "You selected: " + myselect;
+}
 
-console.log(example);
 
-/*
- * console.log(POKEMON);
- * console.log(LoL);
- * console.log(POTTER)
-*/
+
+
+   /*retorna la liga de la imagen
+ document.getElementById("img").innerHTML += `<img src=${foto} />`;
+document.getElementById("img").innerHTML += "fotos"; */

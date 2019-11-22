@@ -1,53 +1,75 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Welcome to the Wizardly World</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Encabezado:  -->
- <header>
-The Wizardly World of Harry Potter
- </header>
- <!-- Cuadro :  -->
-  <div id="welcome">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to the Wizardly World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Germania+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado:  -->
+  <header>
+    The Wizardly World of Harry Potter
+  </header>
+  <!-- Cuadro :  -->
+  <div class="welcomes">
     <p> Welcome Muggle! </p>
     <p> In this website you will learn more about loved ones and not-so-loved characters from the wonderful Harry Potter universe. Enter Hogwarts Castle and let's explore it!</p>
   </div>
-<!-- las diviciones sobre lo que trata la pag -->
-<div id="Houses">
-  <h1> Houses</h1>
-  <hr>
-  <h3> Gryffindor </h1>
+  <!-- botones que enlazan:  -->
+  <button> <a href="#houses"> Houses </a> </button>
+  <button> <a href="#characters"> Characters </a> </button>
+  <button> <a href="#books"> Books </a> </button>
 
-  <p> Gryffindor values bravery, daring, nerve, and chivalry. Its emblematic animal is the lion and its colours are scarlet and gold. Minerva McGonagall was the most recent Head of Gryffindor. Sir Nicholas de Mimsy-Porpington, also known as "Nearly Headless Nick", was the house ghost. The founder of the house was Godric Gryffindor. Gryffindor corresponds to the element of Fire. The common room was located in one of the highest towers at Hogwarts, the entrance was situated on the seventh floor in the east wing of the castle and is guarded by a portrait of The Fat Lady. She permits entrance if given the correct password, which is changed numerous times throughout the school year. Famous Gryffindors include Albus Dumbledore, Harry Potter, and Minervra McGonagall.</p>
-  <h3> Hufflepuff </h2>
-  <p> Hufflepuff values hard work, dedication, patience, loyalty, and fair play. Its emblematic animal is the badger, and Yellow and Black are its colours. Pomona Sprout was the Head of Hufflepuff during 1991-1998, Sprout left the post of Head of Hufflepuff and Herbology Professor sometime before 2017 and her successor for the position of Head of Hufflepuff is currently unknown. The Fat Friar is its ghost. The founder of the house was Helga Hufflepuff.
+  <!-- las diviciones sobre lo que trata la pag -->
+  <div class="Houses">
+    <h1 id="houses"> Houses</h1>
+    <hr>
+    <img src="/FotosHP/qm1429456415.png" alt="logoHouses"> :
+    <ul>
+      <li><h2>Gryffindor</h2></li>
+      <p>Gryffindor values bravery, daring, nerve, and chivalry. Its emblematic animal is the lion and its colours are scarlet and gold. Minerva McGonagall was the most recent Head of Gryffindor. Sir Nicholas de Mimsy-Porpington, also known as "Nearly Headless Nick", was the house ghost. The founder of the house was Godric Gryffindor. Gryffindor corresponds to the element of Fire.</p>
+      <li><h2>Hufflepuff</h2></li>
+      <p>Hufflepuff values hard work, dedication, patience, loyalty, and fair play. Its emblematic animal is the badger, and Yellow and Black are its colours. Pomona Sprout was the Head of Hufflepuff during 1991-1998, Sprout left the post of Head of Hufflepuff and Herbology Professor sometime before 2017 and her successor for the position of Head of Hufflepuff is currently unknown. The Fat Friar is its ghost. The founder of the house was Helga Hufflepuff. Corresponds to the element of earth. </p>
+      <li><h2>Ravenclaw</h2></li>
+      <p>Ravenclaw values intelligence, knowledge, and wit. Its emblematic animal is the eagle, and its colours are blue and bronze. The Ravenclaw Head of House in the 1990s was Filius Flitwick. The ghost of Ravenclaw is the Grey Lady, who was the daughter of Rowena Ravenclaw, the house's founder. Ravenclaw corresponds to the element of air.</p>
+      <li><h2>Slytherin</h2></li>
+      <p>Slytherin house values ambition, cunning and resourcefulness and was founded by Salazar Slytherin. Its emblematic animal is the serpent, and its colours are emerald green and silver. Professor Horace Slughorn was the Head of Slytherin during the 1997–1998 school year, replacing Severus Snape, who as well, replaced Slughorn as Potions Professor when he retired for the first time several years prior.
+        The Bloody Baron is the house ghost. The founder of the house was Salazar Slytherin. Slytherin corresponds roughly to the element of water.</p>
+      </ul>
+      <div class="characters">
+        <h1 id="characters"> Characters </h1>
+        <hr>
+        <form>
+          <select id="mySelect" change ="prueba()">
+            <option value = "1"> Name: </option>
+            <option value = "2"> Specie: </option>
+            <option value = "3"> House: </option>
+            <option value = "4"> Genere: </option>
+          </select>
 
-    Hufflepuff corresponds to the element of earth. The Hufflepuff dormitories and common room are located somewhere in the basement, near the castle's kitchens. It can be accessed by tapping the barrel two from the bottom, middle of the second row in the rhythm of "Helga Hufflepuff" and is described as being a cosy and welcoming place with yellow hangings, fat armchairs, and underground tunnels that lead to the dormitories, which have perfectly round doors, similar to barrel tops. Famous Hufflepuffs include Hengist of Woodcroft (founder of Hogsmeade), Newt Scamander (author of Fantastic Beasts and Where to Find Them), and Artemisia Lufkin (first female minister for magic).</p>
+        </form>
+        <div id="content"></div>
+        <!-- <p id="img"> </p> -->
 
-  <h3> Ravenclaw </h3>
-  <p> Ravenclaw values intelligence, knowledge, and wit. Its emblematic animal is the eagle, and its colours are blue and bronze. The Ravenclaw Head of House in the 1990s was Filius Flitwick. The ghost of Ravenclaw is the Grey Lady, who was the daughter of Rowena Ravenclaw, the house's founder. Ravenclaw corresponds to the element of air. The Ravenclaw common room and dormitories are located in a tower on the west side of the castle. Ravenclaw students must answer a riddle as opposed to giving a password to enter their dormitories. This riddle, however, can be answered by non-Ravenclaws. Famous Ravenclaws include Gilderoy Lockheart, Ignatia Wildsmith (inventor of Floo powder), and Garrick Ollivander. It is rumoured that Alastor "Mad-Eye" Moody was a Ravenclaw.</p>
+      </div>
 
-  <h3> Slytherin </h4>
-  <p> Slytherin house values ambition, cunning and resourcefulness and was founded by Salazar Slytherin. Its emblematic animal is the serpent, and its colours are emerald green and silver. Professor Horace Slughorn was the Head of Slytherin during the 1997–1998 school year, replacing Severus Snape, who as well, replaced Slughorn as Potions Professor when he retired for the first time several years prior.
+      <div class="books">
+        <h1 id="books"> Books </h1>
+        <hr>
+        <p> The Philosopher's Stone (1997)<br>
+          The Chamber of Secrets (1998) <br>
+          The Prisoner of Azkaban (1999) <br>
+          The Goblet of Fire (2000) <br>
+          The Order of the Phoenix (2003) <br>
+          The Half-Blood Prince (2005) <br>
+          The Deathly Hallows (2007) <br>
+        </p>
+      </div>
 
-The Bloody Baron is the house ghost. The founder of the house was Salazar Slytherin. Slytherin corresponds roughly to the element of water. The Slytherin dormitories and common room are reached through a bare stone wall in the Dungeons. The Slytherin common room lies beneath the Black Lake. It is a long, low underground room with rough stone walls and silver lamps hanging from the ceiling. Famous Slytherins include Merlin, Tom Riddle, and Dolores Umbridge.</p>
-
-<div id="Characters">
-  <h1> Characters </h1>
- <hr>
-</div>
-
-<div id="Books">
-  <h1> Books</h1>
-  <hr>
-</div>
-
-    <div id="root"></div>
-    <script type="module" src="main.js"></script>
-  </body>
-</html>
+      <div id="root"></div>
+      <script type="module" src="main.js"></script>
+    </body>
+    </html>
