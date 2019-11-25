@@ -1,30 +1,21 @@
-export const POTTERHOLA =() =>{
-  return 'POTTER';
-};
+export const especies = (data) => data.filter((hola) => hola.species === 'human');
 
-export const especies=(POTTER)=>{
-  return POTTER.filter((hola)=> {
+// Rewrite using map.
+export const allPeople = (data) => {
+  const personajes = [];
 
-    return hola.species ==="human";
-    });
-
-} 
-
-export const allPeople =(POTTER)=>{
- let personajes =[];
- 
-  POTTER.forEach((element) => {
-      personajes.push({
+  // data.map((el) => el.name));
+  data.forEach((element) => {
+    personajes.push({
       imagen: element.image,
       nombre: element.name,
-      actor: element.actor     
+      actor: element.actor,
     });
+  });
 
- }); 
- return personajes;
+  return personajes;
+};
 
- 
-}
+export const casas = (data) => data.filter((datum) => datum.house === 'Gryffindor');
 
-
-
+export const orderByName = (data) => data.sort((a, b) => a.name.localeCompare(b.name));

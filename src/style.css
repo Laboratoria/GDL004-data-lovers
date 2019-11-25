@@ -32,6 +32,8 @@
     height: 100vh;
     position: absolute;
     opacity: .5;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 .pagina1 img, p, input{
@@ -39,6 +41,12 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/*z idex para indicar en que capa esta
+margi-left y margin rigth auto
+aling items center 
+material -icons  material desing
+box shadow -1px 4px 8px y el color 
+*/
 
 
 .conocemas{
@@ -59,6 +67,13 @@
     border-color:white;
     border-width: 2px;
     font-size: 15px;
+}
+
+.imgs{
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    align-items: center;
 }
 
 
@@ -82,7 +97,13 @@
 
 }
 
-
+.nav {
+    text-align: center;
+    margin: auto;
+    background-color: #333;
+    box-shadow: -1px 4px 8px gray;
+    z-index: 999;
+}
 
 .filtrados{
     text-align: center;
@@ -221,3 +242,32 @@ body {
 .nombre-actor-personaje {
     text-align: center;
 } 
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
+@media screen and (max-width:600px){
+    img {
+    max-width:290px;
+    }
+    #imgs {
+        max-width: 290px;
+
+    }
+   
+    #container{
+    width:auto;
+    } 
+   
+    header h1 a{
+    width:auto;
+    }
+   }
+   
