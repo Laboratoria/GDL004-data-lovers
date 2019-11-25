@@ -1,33 +1,28 @@
-export const POTTERHOLA =() =>{
-  return 'POTTER';
-};
 
-export const especies=(POTTER)=>{
-  return POTTER.filter((hola)=> {
-
-    return hola.species ==="human";
-    });
-
-} 
-
-export const allPeople =(POTTER)=>{
- let personajes =[];
- 
+export const todosLosPersonajes = (POTTER)=>{
+  let personajes =[];
+  
   POTTER.forEach((element) => {
-      personajes.push({
-      imagen: element.image,
-      nombre: element.name,
-      actor: element.actor     
-    });
+    personajes.push({
+    image: element.image,
+    name: element.name,
+    actor: element.actor     
+  });
 
  }); 
  return personajes;
 }
 
-export const casas=(POTTER)=>{
-  return POTTER.filter((casas)=> {
-
-    return casas.house ==="Gryffindor";
-    });
+export const hombres = (POTTER)=>{
+  return POTTER.filter((hombres)=> {
+    return hombres.gender === "male";
+  });
 } 
 
+export const mujeres = (POTTER)=>{
+  return POTTER.filter((mujeres)=> {
+    return mujeres.gender === "female";
+  });
+} 
+
+export const ordenarPorNombre = (data) => data.sort((a, b) => a.name.localeCompare(b.name));
