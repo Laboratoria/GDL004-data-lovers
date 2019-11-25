@@ -1,3 +1,4 @@
+
 export const especies = (data) => data.filter((hola) => hola.species === 'human');
 
 // Rewrite using map.
@@ -19,3 +20,33 @@ export const allPeople = (data) => {
 export const casas = (data) => data.filter((datum) => datum.house === 'Gryffindor');
 
 export const orderByName = (data) => data.sort((a, b) => a.name.localeCompare(b.name));
+
+
+export const todosLosPersonajes = (POTTER)=>{
+  let personajes =[];
+  
+  POTTER.forEach((element) => {
+    personajes.push({
+    image: element.image,
+    name: element.name,
+    actor: element.actor     
+  });
+
+ }); 
+ return personajes;
+}
+
+export const hombres = (POTTER)=>{
+  return POTTER.filter((hombres)=> {
+    return hombres.gender === "male";
+  });
+} 
+
+export const mujeres = (POTTER)=>{
+  return POTTER.filter((mujeres)=> {
+    return mujeres.gender === "female";
+  });
+} 
+
+export const ordenarPorNombre = (data) => data.sort((a, b) => a.name.localeCompare(b.name));
+>>>>>>> 5d088ff233388f9b43aee2c4abd1651bc6642dfc
