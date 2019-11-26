@@ -1,0 +1,77 @@
+html{
+  font-family: 'Germania One', cursive;
+  background-repeat: no-repeat;
+  /* background: url(/FotosHP/hederr.jpeg); */
+}
+/* hablar al id # class . */
+header{
+  text-align: center;
+  font-size: 50px;
+}
+
+.welcomes{
+  font-size: 30px;
+  height: 500px;
+  text-align: center;
+  color: #E28936;
+
+}
+.buttuns .button {
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+.button{
+  float:left;
+  background-color: #black;
+  border: ##e7e7e7; color: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+}
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.Houses{
+  text-align: left;
+
+}
+.Houses .logo{
+  padding: 10px;
+  margin: 10px;
+  float: right;
+  width: 250px;
+}
+.Houses h1 {
+  text-align: center;}
+.Houses h2{
+  text-align: center;
+}
+
+.characters{
+  font-size: 20px;
+  color: green;
+
+}
+
+.books{
+  text-align: right;
+
+}
+
+#content img {
+  width: 100px;
+  height: 50%;
+}
+
+
+
+/* medidas fata divs fondos
+background-image: url(/FotosHP/libros.jpg);
+background-repeat: no-repeat;
+border: 2px solid black;
+padding: 25px;
+background-size: 100% 100%;
+*/

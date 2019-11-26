@@ -1,14 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="main.js"></script>
-  </body>
-</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to the Wizardly World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Germania+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Encabezado:  -->
+  <header>
+    The Wizardly World of Harry Potter
+  </header>
+  <!-- Cuadro :  -->
+  <div class="welcomes">
+    <p> Welcome Muggle! </p>
+    <p> In this website you will learn more about loved ones and not-so-loved characters from the wonderful Harry Potter universe. Enter Hogwarts Castle and let's explore it!</p>
+  </div>
+  <!-- botones que enlazan:  -->
+  <div class="buttuns">
+  <button class="button" b1> <a href="#houses"> Houses </a> </button>
+  <button class="button" b2> <a href="#characters"> Characters </a> </button>
+  <button class="button" b3> <a href="#books"> Books </a> </button>
+</div>
+  <!-- las diviciones sobre lo que trata la pag -->
+<br>
+<br>
+  <div class="Houses">
+    <h1 id="houses"> Houses</h1>
+    <hr>
+    <img class="logo" src="/FotosHP/qm1429456415.png" alt="logoHouses">
+
+      <h2 id="gryffindor">Gryffindor</h2>
+      <p>Gryffindor values bravery, daring, nerve, and chivalry. Its emblematic animal is the lion and its colours are scarlet and gold. Minerva McGonagall was the most recent Head of Gryffindor. Sir Nicholas de Mimsy-Porpington, also known as "Nearly Headless Nick", was the house ghost. The founder of the house was Godric Gryffindor. Gryffindor corresponds to the element of Fire.</p>
+      <h2 id="hufflepuff">Hufflepuff</h2>
+      <p>Hufflepuff values hard work, dedication, patience, loyalty, and fair play. Its emblematic animal is the badger, and Yellow and Black are its colours. Pomona Sprout was the Head of Hufflepuff during 1991-1998, Sprout left the post of Head of Hufflepuff and Herbology Professor sometime before 2017 and her successor for the position of Head of Hufflepuff is currently unknown. The Fat Friar is its ghost. The founder of the house was Helga Hufflepuff. Corresponds to the element of earth. </p>
+      <h2 id="revenclaw">Ravenclaw</h2>
+      <p>Ravenclaw values intelligence, knowledge, and wit. Its emblematic animal is the eagle, and its colours are blue and bronze. The Ravenclaw Head of House in the 1990s was Filius Flitwick. The ghost of Ravenclaw is the Grey Lady, who was the daughter of Rowena Ravenclaw, the house's founder. Ravenclaw corresponds to the element of air.</p>
+      <h2 id="slytherin">Slytherin</h2>
+      <p>Slytherin house values ambition, cunning and resourcefulness and was founded by Salazar Slytherin. Its emblematic animal is the serpent, and its colours are emerald green and silver. Professor Horace Slughorn was the Head of Slytherin during the 1997–1998 school year, replacing Severus Snape, who as well, replaced Slughorn as Potions Professor when he retired for the first time several years prior.
+        The Bloody Baron is the house ghost. The founder of the house was Salazar Slytherin. Slytherin corresponds roughly to the element of water.</p>
+</div>
+<br>
+
+      <div class="characters">
+        <h1 id="characters"> Characters </h1>
+        <hr>
+        <form>
+          <select id="mySelect">
+            <option> Select an option </option>
+            <option value = "1"> Name: </option>
+            <optgroup label="Houses">
+              <option value="Gryffindor">Gryffindor</option>
+              <option value="Slytherin">Slytherin</option>
+            </optgroup>
+            <option value = "3"> Specie: </option>
+            <optgroup label="Gender">
+              <option value="4">Male</option>
+              <option value="5">Female</option>
+            </optgroup>
+
+          </select>
+
+        </form>
+        <div id="content"></div>
+        <!-- <p id="img"> </p> -->
+
+      </div>
+<br>
+<br>
+      <div class="books">
+        <h1 id="books"> Books </h1>
+        <hr>
+        <p> The Philosopher's Stone (1997)<br>
+          The Chamber of Secrets (1998) <br>
+          The Prisoner of Azkaban (1999) <br>
+          The Goblet of Fire (2000) <br>
+          The Order of the Phoenix (2003) <br>
+          The Half-Blood Prince (2005) <br>
+          The Deathly Hallows (2007) <br>
+        </p>
+      </div>
+
+      <div id="root"></div>
+      <script type="module" src="main.js"></script>
+    </body>
+    </html>
