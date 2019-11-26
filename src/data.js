@@ -3,20 +3,34 @@ import potter from './data/potter/potter.js';
 
 export const nombres = (potter) => {
   return potter.filter((characters)=>{
-    let characterees = characters.name
-    return characterees;
+    return characters;
   });
 }
 
 export const house = (potter)=> {
   return potter.filter((houses)=>{
+    //if(houses.house === "Gryffindor"){
+      return houses.house
+    //}
+  })
+}
+
+export const houseGriffyndor = (potter)=> {
+  return potter.filter((houses)=>{
     if(houses.house === "Gryffindor"){
       return houses
-
-
     }
   })
 }
+
+export const houseSlytherin = (potter)=> {
+  return potter.filter((houses)=>{
+    if(houses.house === "Slytherin"){
+      return houses
+    }
+  })
+}
+
 
 
 

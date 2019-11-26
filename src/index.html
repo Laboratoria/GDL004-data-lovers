@@ -19,35 +19,48 @@
     <p> In this website you will learn more about loved ones and not-so-loved characters from the wonderful Harry Potter universe. Enter Hogwarts Castle and let's explore it!</p>
   </div>
   <!-- botones que enlazan:  -->
-  <button> <a href="#houses"> Houses </a> </button>
-  <button> <a href="#characters"> Characters </a> </button>
-  <button> <a href="#books"> Books </a> </button>
-
+  <div class="buttuns">
+  <button class="button" b1> <a href="#houses"> Houses </a> </button>
+  <button class="button" b2> <a href="#characters"> Characters </a> </button>
+  <button class="button" b3> <a href="#books"> Books </a> </button>
+</div>
   <!-- las diviciones sobre lo que trata la pag -->
+<br>
+<br>
   <div class="Houses">
     <h1 id="houses"> Houses</h1>
     <hr>
-    <img src="/FotosHP/qm1429456415.png" alt="logoHouses"> :
-    <ul>
-      <li><h2>Gryffindor</h2></li>
+    <img class="logo" src="/FotosHP/qm1429456415.png" alt="logoHouses">
+
+      <h2 id="gryffindor">Gryffindor</h2>
       <p>Gryffindor values bravery, daring, nerve, and chivalry. Its emblematic animal is the lion and its colours are scarlet and gold. Minerva McGonagall was the most recent Head of Gryffindor. Sir Nicholas de Mimsy-Porpington, also known as "Nearly Headless Nick", was the house ghost. The founder of the house was Godric Gryffindor. Gryffindor corresponds to the element of Fire.</p>
-      <li><h2>Hufflepuff</h2></li>
+      <h2 id="hufflepuff">Hufflepuff</h2>
       <p>Hufflepuff values hard work, dedication, patience, loyalty, and fair play. Its emblematic animal is the badger, and Yellow and Black are its colours. Pomona Sprout was the Head of Hufflepuff during 1991-1998, Sprout left the post of Head of Hufflepuff and Herbology Professor sometime before 2017 and her successor for the position of Head of Hufflepuff is currently unknown. The Fat Friar is its ghost. The founder of the house was Helga Hufflepuff. Corresponds to the element of earth. </p>
-      <li><h2>Ravenclaw</h2></li>
+      <h2 id="revenclaw">Ravenclaw</h2>
       <p>Ravenclaw values intelligence, knowledge, and wit. Its emblematic animal is the eagle, and its colours are blue and bronze. The Ravenclaw Head of House in the 1990s was Filius Flitwick. The ghost of Ravenclaw is the Grey Lady, who was the daughter of Rowena Ravenclaw, the house's founder. Ravenclaw corresponds to the element of air.</p>
-      <li><h2>Slytherin</h2></li>
+      <h2 id="slytherin">Slytherin</h2>
       <p>Slytherin house values ambition, cunning and resourcefulness and was founded by Salazar Slytherin. Its emblematic animal is the serpent, and its colours are emerald green and silver. Professor Horace Slughorn was the Head of Slytherin during the 1997–1998 school year, replacing Severus Snape, who as well, replaced Slughorn as Potions Professor when he retired for the first time several years prior.
         The Bloody Baron is the house ghost. The founder of the house was Salazar Slytherin. Slytherin corresponds roughly to the element of water.</p>
-      </ul>
+</div>
+<br>
+
       <div class="characters">
         <h1 id="characters"> Characters </h1>
         <hr>
         <form>
-          <select id="mySelect" change ="prueba()">
+          <select id="mySelect">
+            <option> Select an option </option>
             <option value = "1"> Name: </option>
-            <option value = "2"> Specie: </option>
-            <option value = "3"> House: </option>
-            <option value = "4"> Genere: </option>
+            <optgroup label="Houses">
+              <option value="Gryffindor">Gryffindor</option>
+              <option value="Slytherin">Slytherin</option>
+            </optgroup>
+            <option value = "3"> Specie: </option>
+            <optgroup label="Gender">
+              <option value="4">Male</option>
+              <option value="5">Female</option>
+            </optgroup>
+
           </select>
 
         </form>
@@ -55,7 +68,8 @@
         <!-- <p id="img"> </p> -->
 
       </div>
-
+<br>
+<br>
       <div class="books">
         <h1 id="books"> Books </h1>
         <hr>
