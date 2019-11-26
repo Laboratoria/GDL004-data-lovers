@@ -176,6 +176,7 @@ box shadow -1px 4px 8px y el color
     margin-left: auto;
     margin-right:auto;
     align-items: center;
+    display: inline-block;
 }
 .reseña{
     color: white;
@@ -341,43 +342,67 @@ body {
 
 } 
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
 
 	.social-panel-container.visible {
 		transform: translateX(0px);
 	}
 	
-}
-@media screen and (max-width: 480px) {
-	.social-panel-container.visible {
-		transform: translateX(0px);
-	}
-	.floating-btn {
-		right: 10px;
-	}
+} */
+
+/* medidas para celular */
+@media screen and (min-width: 359px) {
+    .imgs {
+        width: 78%;
+    
+    }
+    .reseña{
+        width: 90%;
+    }
+
+    .img {
+       width:100%;
+    }
+    .nav {
+        
+        width:70%;
+    }
+        
+            
+     #container{
+        width:auto;
+        } 
+        
+         header h1 a{
+        width:auto;
+        }
+  }
+
+
+  /* medidas para tablet */
+@media screen and (min-width: 360px) and (max-width: 480px ) {
+    .imgs {
+        width: 80%;
+    
+    }
+    .reseña{
+        width: 490px;
+    }
+       
 }
 @media screen and (max-width:600px){
     img {
     max-width:290px;
     }
 
-    #imgs {
-        max-width: 290px;
-
-    }
-   
     #container{
     width:auto;
     } 
-   
-    #container{
-    width:auto;
-    }
 
     header h1 a{
     width:auto;
     }
-   }
+ }
 
    
 

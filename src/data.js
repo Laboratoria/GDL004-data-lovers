@@ -49,4 +49,4 @@ export const mujeres = (POTTER)=>{
 } 
 
 export const ordenarPorNombre = (data) => data.sort((a, b) => a.name.localeCompare(b.name));
->>>>>>> 5d088ff233388f9b43aee2c4abd1651bc6642dfc
+
