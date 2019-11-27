@@ -3,7 +3,6 @@
 
 }
 
-
 #pagina2{
     display: none;
 }
@@ -28,7 +27,6 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-
 }
 
 
@@ -50,13 +48,6 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/*z idex para indicar en que capa esta
-margi-left y margin rigth auto
-aling items center 
-material -icons  material desing
-box shadow -1px 4px 8px y el color 
-*/
-
 
 .conocemas{
     position: absolute;
@@ -70,6 +61,7 @@ box shadow -1px 4px 8px y el color
     width: 130px;
     height: 30px;
     border-width: 1px;
+    
 }
 
 .conocemas:hover{
@@ -99,6 +91,7 @@ box shadow -1px 4px 8px y el color
     margin: 2px;
     padding: 20px;
 }
+
 .reseña:first-letter{
     font-size: 35px;
     font-family: 'Bitter', serif;
@@ -106,119 +99,143 @@ box shadow -1px 4px 8px y el color
 
 }
 
-.nav {
-    text-align: center;
-    margin: auto;
-    background-color: #333;
-    box-shadow: -1px 4px 8px gray;
-}
+ /*pagina 2 */
 
-
-#pagina2{
-    display: none;
-}
-
-.pagina1{
-    background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
+ .pagina2{
+    background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     margin: 0;
     position: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Bitter', serif;
+
 }
-.pagina1:before{
-    background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
+
+.pagina2:before{
+    background-color: black;
     background-size: cover;
     background-position: center center;
     content: "";
+    height: 100%;
     width: 100vw;
-    height: 100vh;
     position: absolute;
-    opacity: .5;
+    opacity: .6;
     margin-left: auto;
     margin-right:auto;
 }
-.pagina1 img, p, input{
-    position: relative;
-    font-family: 'Josefin Sans', sans-serif;
-}
-/*z idex para indicar en que capa esta
-margi-left y margin rigth auto
-aling items center
-material -icons  material desing
-box shadow -1px 4px 8px y el color
-*/
-.conocemas{
-    position: absolute;
-    bottom: 4%;
-    color: white;
-    border-radius: 15px;
-    font-size: 14px;
-    padding: 5px;
-    background: transparent;
-    font-family: 'Josefin Sans', sans-serif;
-    width: 130px;
-    height: 30px;
-    border-width: 1px;
-}
-.conocemas:hover{
-    border-color:white;
-    border-width: 2px;
-    font-size: 15px;
-}
-.imgs{
-    position: relative;
+
+
+.logoHarry{
+    text-align: center;   
     margin-left: auto;
     margin-right:auto;
-    align-items: center;
+    position: relative;
 }
-.reseña{
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    width:600px;
-    height: auto;
-    font-size: 14px;
+
+.seleccionaOpcion{
+    text-align: center;   
+    margin-left: auto;
+    margin-right:auto;
+    position: relative;
+    
+}
+
+.selecciona{
     text-align: center;
-    margin: auto;
-    position: absolute;
-    bottom: 7%;
-    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.seleccion{
+    margin: 50px;
     padding: 20px;
+    font-family: 'Josefin Sans', sans-serif;
 }
-.reseña:first-letter{
-    font-size: 35px;
-    font-family: 'Bitter', serif;
-    bottom: 6%;
+.seleccion:hover{
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
+
+/* pagina 3 */
+.pagina3{
+    align-items: center;
+    text-align: center;
+  
+
+}
+.todasLasCasas {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bolder ;
+    
+}
+
+.imgCasas{
+    margin: 50px;
+    padding: 20px;
+    font-weight: bolder ;
+    
+}
+
+.imgCasas :hover{
+    transform: scale(1.4, 1.4);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+/* pagina 4 */
 .nav {
     text-align: center;
     margin: auto;
     background-color: #333;
     box-shadow: -1px 4px 8px gray;
-    z-index: 999;
 }
+
+
 .filtrados{
     text-align: center;
     padding: 10px;
 }
-.casas{
-    background-color: transparent;
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+.filtros{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
     text-align: center;
-    padding: 3px;
-    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
-.casas:hover{
+
+.filtros{
+    background-color: white;
     color: black;
-    background: rgb(3, 67, 119);
+    border: 2px solid #555555;
 }
+.filtros:hover{
+    background-color: #555555;
+    color: white;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -230,7 +247,6 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Lato';
 	margin: 0;
 }
 .nav {
@@ -239,6 +255,7 @@ body {
     background-color: #333;
     box-shadow:-1px 4px 8px gray;
     z-index: 999;
+    width: 100vw;
 }
  h1 {
 	letter-spacing: 3px;
@@ -296,11 +313,11 @@ body {
 }
 .card {
     margin: 30px auto;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 290px;
     border-radius: 40px;
     padding: 20px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     justify-content: space-around;
     transition: 0.4s;
@@ -310,6 +327,7 @@ body {
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
       -5px -5px 30px 15px rgba(0,0,0,0.22);
   }
+
 .img-personajes {
     border-radius: 30px;
     position: flex;
@@ -317,17 +335,51 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.imagenesP{
+    border-radius: 100px; 
+}
+
 .nombre-actor-personaje {
     text-align: center;
 }
-@media screen and (max-width: 480px) {
-	.social-panel-container.visible {
-		transform: translateX(0px);
-	}
-	.floating-btn {
-		right: 10px;
-	}
-}
+
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    img {
+        max-width:290px;
+        }
+     #container{
+        width:auto;
+        }
+     header h1 a{
+        width:auto;
+        }
+    .imgs{
+            width:100%;
+        }
+   .reseña{
+            width:80%;  
+        }
+    .pagina1{
+            width: 70%;
+        }
+    .selecciona{
+        width: 70%;
+        text-align: center;
+        }
+    .seleccion{
+        width: 60%;
+        height: 10%;
+        text-align: center;
+        }   
+    .pagina2:before{
+        width: 60%;
+    }
+}    
+
+
+
 @media screen and (max-width:600px){
     img {
     max-width:290px;
@@ -338,4 +390,19 @@ body {
     header h1 a{
     width:auto;
     }
+    .imgs{
+        width:10%;
+    }
+    .reseña{
+        width:80%;
+    }
+    .conocemas{
+        width: 30%;
+    }
+    .selecciona{
+        width: 40%;
+        }
+    .seleccion{
+        width: 70%;
+        }   
    }

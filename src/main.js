@@ -7,11 +7,25 @@
 let conoceMas= document.getElementById ("conocemas");
 let selCasas= document.getElementById ("seleccion-casas");
 let selPersonajes= document.getElementById ("seleccion-personajes");
+let regresarPagina4a2= document.getElementById ("regresarAPagina2");
+let regresarPagina3a2= document.getElementById ("regresarAPag2");
+
 
 conoceMas.addEventListener("click", () => {
     document.getElementById("pagina1").style.display = "none";
     document.getElementById("pagina2").style.display = "block";
 });
+
+regresarPagina4a2.addEventListener("click", () => {
+  document.getElementById("pagina4").style.display = "none";
+  document.getElementById("pagina2").style.display = "block";
+});
+
+regresarPagina3a2.addEventListener("click", () => {
+  document.getElementById("pagina3").style.display = "none";
+  document.getElementById("pagina2").style.display = "block";
+});
+
 
 selCasas.addEventListener("click", () => {
   document.getElementById("pagina2").style.display = "none";
@@ -84,6 +98,8 @@ function mostrarPersonajes(personaje){
     img.setAttribute("src",personaje[i].image);
     img.setAttribute("width",150);
     img.setAttribute("height",200);
+  // esta linea le agrega la classe a las imagenes.
+    img.classList.add("imagenesP")
     // agregando una clase al p1
     p1.classList.add("nombre-actor-personaje");
   // esta linea le agrega al elemento p1 el nombre del personaje
