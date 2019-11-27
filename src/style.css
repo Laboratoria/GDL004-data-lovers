@@ -102,7 +102,6 @@
 
  .pagina2{
     background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
-    font-family: 'Patrick Hand', cursive;
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,6 +113,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Didact Gothic', sans-serif;
+
+}
+
+.pagina2:before{
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    content: "";
+    width: 100vw;
+    height: 112vh;
+    position: absolute;
+    opacity: .6;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 
@@ -122,8 +136,8 @@
     margin-left: auto;
     margin-right:auto;
     position: relative;
-    
 }
+
 .seleccionaOpcion{
     text-align: center;   
     margin-left: auto;
@@ -142,10 +156,31 @@
 .seleccion{
     margin: 50px;
     padding: 20px;
-    font-family: 'Patrick Hand', cursive;
+    
+}
+/* pagina 3 */
+.pagina3{
+    align-items: center;
+
+}
+.todasLasCasas {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bolder ;
+    
 }
 
-/* pagina 3 */
+.imgCasas{
+    margin: 50px;
+    padding: 20px;
+    font-weight: bolder ;
+}
+
+
+/* pagina 4 */
 .nav {
     text-align: center;
     margin: auto;
@@ -171,7 +206,6 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Lato';
 	margin: 0;
 }
 .nav {
@@ -294,13 +328,11 @@ body {
         text-align: center;
         }
     .seleccion{
-        width: 70%;
+        width: 60%;
+        height: 10%;
         text-align: center;
         }   
-    .pagina2{
-        width: 70%;
-        text-align: center;
-    }
+    
 }    
 
 
