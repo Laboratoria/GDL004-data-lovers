@@ -1,11 +1,28 @@
-// botton1  para ir a la siguiente Pagina
-let boton1= document.getElementById("conocemas");
-boton1.addEventListener("click",nextPage)
 
+export const todosLosPersonajes = (POTTER)=>{
+  let personajes =[];
+  
+  POTTER.forEach((element) => {
+    personajes.push({
+    image: element.image,
+    name: element.name,
+    actor: element.actor     
+  });
 
-function nextPage(){
-  let pagina1= document.getElementById("pagina1").style.display = "none";
-  let pagina2= document.getElementById("pagina2").style.display = "block";
-console.log(pagina1)
+ }); 
+ return personajes;
 }
 
+export const hombres = (POTTER)=>{
+  return POTTER.filter((hombres)=> {
+    return hombres.gender === "male";
+  });
+} 
+
+export const mujeres = (POTTER)=>{
+  return POTTER.filter((mujeres)=> {
+    return mujeres.gender === "female";
+  });
+} 
+
+export const ordenarPorNombre = (data) => data.sort((a, b) => a.name.localeCompare(b.name));

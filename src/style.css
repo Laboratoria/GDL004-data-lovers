@@ -1,55 +1,348 @@
 *{
     margin: 0px;
-    padding: 0px;
+
 }
 
 
 #pagina2{
     display: none;
-    
+}
+
+#pagina3{
+    display: none;
+}
+
+#pagina4{
+    display: none;
 }
 
 .pagina1{
     background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     background-attachment: fixed;
     height: 100vh;
     width: 100vw;
     margin: 0;
-    text-align: center;
+    position: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
 }
 
-.imagenBienvenida{
-    width: 50%;
-    height: auto;
-    margin: auto;
-    float:center;
-    max-width: 100%;
-}
 
-.pagina1:after{
+.pagina1:before{
     background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: absolute;
-    height: 100vh;
+    content: "";
     width: 100vw;
-    margin: 0;
-    opacity: .4;
+    height: 100vh;
+    position: absolute;
+    opacity: .5;
+    margin-left: auto;
+    margin-right:auto;
 }
+
+.pagina1 img, p, input{
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*z idex para indicar en que capa esta
+margi-left y margin rigth auto
+aling items center 
+material -icons  material desing
+box shadow -1px 4px 8px y el color 
+*/
+
+
+.conocemas{
+    position: absolute;
+    bottom: 4%;
+    color: white;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 5px;
+    background: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 130px;
+    height: 30px;
+    border-width: 1px;
+}
+
+.conocemas:hover{
+    border-color:white;
+    border-width: 2px;
+    font-size: 15px;
+}
+
+.imgs{
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    align-items: center;
+}
+
 
 .reseña{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    bottom: 22%;
-    max-width: 100%;
-    width:30%;
-    font-size: 90%;
+    width:600px;
+    height: auto;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
     position: absolute;
+    bottom: 7%;
+    margin: 2px;
+    padding: 20px;
+}
+.reseña:first-letter{
+    font-size: 35px;
+    font-family: 'Bitter', serif;
+    bottom: 6%;
+
+}
+
+.nav {
+    text-align: center;
+    margin: auto;
+    background-color: #333;
+    box-shadow: -1px 4px 8px gray;
+}
+
+
+#pagina2{
+    display: none;
+}
+
+.pagina1{
+    background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pagina1:before{
+    background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
+    background-size: cover;
+    background-position: center center;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: .5;
+    margin-left: auto;
+    margin-right:auto;
+}
+.pagina1 img, p, input{
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*z idex para indicar en que capa esta
+margi-left y margin rigth auto
+aling items center
+material -icons  material desing
+box shadow -1px 4px 8px y el color
+*/
+.conocemas{
+    position: absolute;
+    bottom: 4%;
+    color: white;
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 5px;
+    background: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 130px;
+    height: 30px;
+    border-width: 1px;
+}
+.conocemas:hover{
+    border-color:white;
+    border-width: 2px;
+    font-size: 15px;
+}
+.imgs{
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    align-items: center;
+}
+.reseña{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    width:600px;
+    height: auto;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+<<<<<<< HEAD
     bottom: 30%;
     text-shadow: 0px 1px 1px  white;
 
 }
+=======
+    bottom: 7%;
+    margin: 2px;
+    padding: 20px;
+}
+.reseña:first-letter{
+    font-size: 35px;
+    font-family: 'Bitter', serif;
+    bottom: 6%;
+}
+.nav {
+    text-align: center;
+    margin: auto;
+    background-color: #333;
+    box-shadow: -1px 4px 8px gray;
+    z-index: 999;
+}
+.filtrados{
+    text-align: center;
+    padding: 10px;
+}
+.casas{
+    background-color: transparent;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 3px;
+    margin: 5px;
+}
+.casas:hover{
+    color: black;
+    background: rgb(3, 67, 119);
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lato';
+	margin: 0;
+}
+.nav {
+    text-align: center;
+    margin: auto;
+    background-color: #333;
+    box-shadow:-1px 4px 8px gray;
+    z-index: 999;
+}
+ h1 {
+	letter-spacing: 3px;
+}
+.personajes {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.mostrarPersonajes{
+	background-color: #eee;
+	border-radius: 20px;
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+}
+.centro{
+    text-align: center;
+}
+.mostrarPersonajes .img-container {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+.mostrarPersonajes .img-container img {
+	margin-top: 20px;
+	max-width: 90%;
+}
+.mostrarPersonajes .info {
+	margin-top: 20px;
+	font-size: 0.8em;
+}
+.mostrarPersonajes .number {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	font-size: 10px;
+	padding: 5px 10px;
+}
+.mostrarPersonajes .name {
+	margin: 13px 0 7px;
+	letter-spacing: 1px;
+}
+ .mostrarPersonajes {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap
+}
+.card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    padding: 20px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    justify-content: space-around;
+    transition: 0.4s;
+  }
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+.img-personajes {
+    border-radius: 30px;
+    position: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nombre-actor-personaje {
+    text-align: center;
+}
+@media screen and (max-width: 480px) {
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	.floating-btn {
+		right: 10px;
+	}
+}
+@media screen and (max-width:600px){
+    img {
+    max-width:290px;
+    }
+    #container{
+    width:auto;
+    }
+    header h1 a{
+    width:auto;
+    }
+   }
+>>>>>>> 5d088ff233388f9b43aee2c4abd1651bc6642dfc
