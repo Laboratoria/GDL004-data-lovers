@@ -61,6 +61,7 @@
     width: 130px;
     height: 30px;
     border-width: 1px;
+    
 }
 
 .conocemas:hover{
@@ -113,7 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Bitter', serif;
 
 }
 
@@ -122,8 +123,8 @@
     background-size: cover;
     background-position: center center;
     content: "";
+    height: 100%;
     width: 100vw;
-    height: 112vh;
     position: absolute;
     opacity: .6;
     margin-left: auto;
@@ -143,6 +144,7 @@
     margin-left: auto;
     margin-right:auto;
     position: relative;
+    
 }
 
 .selecciona{
@@ -151,16 +153,26 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
+
 
 .seleccion{
     margin: 50px;
     padding: 20px;
-    
+    font-family: 'Josefin Sans', sans-serif;
 }
+.seleccion:hover{
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
 /* pagina 3 */
 .pagina3{
     align-items: center;
+    text-align: center;
+  
 
 }
 .todasLasCasas {
@@ -177,8 +189,14 @@
     margin: 50px;
     padding: 20px;
     font-weight: bolder ;
+    
 }
 
+.imgCasas :hover{
+    transform: scale(1.4, 1.4);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
 
 /* pagina 4 */
 .nav {
@@ -193,7 +211,30 @@
     text-align: center;
     padding: 10px;
 }
+.filtros{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
 
+.filtros{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+.filtros:hover{
+    background-color: #555555;
+    color: white;
+}
 
 * {
 	box-sizing: border-box;
@@ -332,7 +373,9 @@ body {
         height: 10%;
         text-align: center;
         }   
-    
+    .pagina2:before{
+        width: 60%;
+    }
 }    
 
 
