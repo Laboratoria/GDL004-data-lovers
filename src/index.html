@@ -10,12 +10,15 @@
     <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+
   </head>
   <body>
     
     <div id="pagina1"class="pagina1" >
       <div class="imgs">
-      <img src="images/bienvenido.png" width="650" /> 
+        <img src="images/bienvenido.png" width="650" /> 
       </div>
         
       <div class="reseña">
@@ -29,17 +32,38 @@
       <button class="conocemas" id="conocemas"> Conoce más </button>
         
     </div>
-    <div id="pagina2">
+    
+    <div id="pagina2" class="pagina2">
+      <div class="logoHarry">
+        <img src="images/logo harry poter.png" width="200"/>
+      </div>
+      <br>
+      <br>
       
-      <div class="seleccionaOpcion">
-      <button id ="seleccion-casas"class="seleccion" value="casas"> casas </button>
-      <button id ="seleccion-personajes"class="seleccion" value="allpersonajes">todos los personajes</button>
+      <div class="seleccionaOpcion" class="imgs">
+        <h1>ELIGE UNA OPCIÓN</h1>
+        <br>
+        <br>
+        <div class="selecciona" class="imgs">
+          <div class="seleccion">
+          <h2>CASAS</h2>
+          <br>
+          <img src="images/CASAS DE HARRY POTTER.png" id="seleccion-casas" width="330"   height="330"  />
+          </div>
+          
+          <div class="seleccion">
+            <h2>TODOS LOS PERSONAJES</h2>
+            <br>
+            <img src="images/PERSONAJES DE HARRY POTER.png"   width="365"  id ="seleccion-personajes"/>
+          </div>  
+        
+        </div>
       </div>
       
     </div>  
 
     <div id="pagina3">
-      
+      <button class="regresar" id="regresarAPag2"> Regresar </button>
     </div>
 
     <div id="pagina4">
@@ -51,6 +75,7 @@
         <button id ="hombres"class="filtros" value="male">Hombres </button>
         <button id ="mujeres"class="filtros" value="female">Mujeres</button>
         <button id ="OrdenarA-Z"class="filtros" >Ordenar A-Z</button>
+        <button class="regresar" id="regresarAPagina2"> Regresar </button>
       </div>
       
       <div class="personajes" id="mostrarPersonajes">
