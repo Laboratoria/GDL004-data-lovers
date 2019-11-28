@@ -4,14 +4,14 @@
  import {todosLosPersonajes, hombres, mujeres, ordenarPorNombre} from './data.js';
  
 
-let conoceMas= document.getElementById ("conocemas");
+let bottonconoceMas= document.getElementById ("conocemas");
 let selCasas= document.getElementById ("seleccion-casas");
 let selPersonajes= document.getElementById ("seleccion-personajes");
 let regresarPagina4a2= document.getElementById ("regresarAPagina2");
 let regresarPagina3a2= document.getElementById ("regresarAPag2");
 
 
-conoceMas.addEventListener("click", () => {
+bottonconoceMas.addEventListener("click", () => {
     document.getElementById("pagina1").style.display = "none";
     document.getElementById("pagina2").style.display = "block";
 });

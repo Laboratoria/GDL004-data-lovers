@@ -14,7 +14,7 @@
 #pagina4{
     display: none;
 }
-
+/* PAGINA 1 */
 .pagina1{
     background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
     background-repeat: no-repeat;
@@ -49,7 +49,7 @@
 }
 
 
-.conocemas{
+.botonConoceMas{
     position: absolute;
     bottom: 4%;
     color: white;
@@ -70,7 +70,7 @@
     font-size: 15px;
 }
 
-.imgs{
+.imgsPag1{
     position: relative;
     margin-left: auto;
     margin-right:auto;
@@ -78,7 +78,7 @@
 }
 
 
-.reseña{
+.reseñaPag1{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     width:600px;
@@ -92,7 +92,7 @@
     padding: 20px;
 }
 
-.reseña:first-letter{
+.reseñaPag1:first-letter{
     font-size: 35px;
     font-family: 'Bitter', serif;
     bottom: 6%;
@@ -114,7 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Bitter', serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -123,7 +123,7 @@
     background-size: cover;
     background-position: center center;
     content: "";
-    height: 100%;
+    height: 120%;
     width: 100vw;
     position: absolute;
     opacity: .6;
@@ -132,37 +132,40 @@
 }
 
 
-.logoHarry{
+
+.imgLogoLetrasHarry{
+    text-align: center;   
+    margin-left: 43%;
+    margin-right:auto;
+    position: relative;
+    width: 100px;
+}
+
+.TextoSeleccionaOpcion{
     text-align: center;   
     margin-left: auto;
     margin-right:auto;
-    position: relative;
+    position: relative;  
 }
 
-.seleccionaOpcion{
-    text-align: center;   
-    margin-left: auto;
-    margin-right:auto;
-    position: relative;
-    
-}
-
-.selecciona{
+.contenedorImgsYtxtSeleccionP2{
     text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
+    position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-.seleccion{
+.imgSeleccionP2{
     margin: 50px;
     padding: 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    
+    
 }
-.seleccion:hover{
+.imgSeleccionP2:hover{
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
       -5px -5px 30px 15px rgba(0,0,0,0.22);
@@ -172,30 +175,88 @@
 .pagina3{
     align-items: center;
     text-align: center;
-  
 
 }
-.todasLasCasas {
+
+.nav {
     text-align: center;
+    margin: auto;
+    background-color: #333;
+    box-shadow:-1px 4px 8px gray;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-weight: bolder ;
+    z-index: 3;
+    padding: 10px;
+}
+
+.botonRegresar{
+    background-color: white;
+    border: none;
+    color:black;
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 19px;
+    margin-left: 4px;
+}
+
+.botonRegresar{
+    background-color: #555555;
+    color: white;
     
 }
+
+.botonRegresar:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+
 
 .imgCasas{
-    margin: 50px;
+    margin: 30px;
+    width: 230px;
+    height: 480px;
+    border-radius: 40px;
     padding: 20px;
-    font-weight: bolder ;
-    
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
 }
 
-.imgCasas :hover{
-    transform: scale(1.4, 1.4);
+.descripcionCasas{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    margin: 2px;
+    padding: 20px;
+
+}
+
+.mayusCasas{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.imgCasas:hover{
+    transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
     -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.describeCasas {
+    text-align: center;
 }
 
 /* pagina 4 */
@@ -203,15 +264,18 @@
     text-align: center;
     margin: auto;
     background-color: #333;
-    box-shadow: -1px 4px 8px gray;
+    box-shadow:-1px 4px 8px gray;
+    z-index: 999;
+    width: 100vw;
 }
 
 
-.filtrados{
+.filtrosPersonajes{
     text-align: center;
     padding: 10px;
 }
-.filtros{
+
+.botonFiltros{
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -224,14 +288,16 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    border-radius: 6px;
 }
 
-.filtros{
+.botonFiltros{
     background-color: white;
     color: black;
     border: 2px solid #555555;
 }
-.filtros:hover{
+
+.botonFiltros:hover{
     background-color: #555555;
     color: white;
 }
@@ -239,6 +305,7 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	background: #EFEFBB;
 	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
@@ -249,17 +316,11 @@ body {
 	justify-content: center;
 	margin: 0;
 }
-.nav {
-    text-align: center;
-    margin: auto;
-    background-color: #333;
-    box-shadow:-1px 4px 8px gray;
-    z-index: 999;
-    width: 100vw;
-}
- h1 {
+
+h1 {
 	letter-spacing: 3px;
 }
+
 .personajes {
 	display: flex;
 	flex-wrap: wrap;
@@ -268,17 +329,20 @@ body {
 	margin: 0 auto;
 	max-width: 1200px;
 }
+
 .mostrarPersonajes{
-	background-color: #eee;
+	background-color: rgb(49, 43, 43);
 	border-radius: 20px;
 	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 	margin: 10px;
 	padding: 20px;
 	text-align: center;
 }
+
 .centro{
     text-align: center;
 }
+
 .mostrarPersonajes .img-container {
 	background-color: rgba(255, 255, 255, 0.6);
 	border-radius: 50%;
@@ -286,47 +350,56 @@ body {
 	height: 120px;
 	text-align: center;
 }
+
 .mostrarPersonajes .img-container img {
 	margin-top: 20px;
 	max-width: 90%;
 }
+
 .mostrarPersonajes .info {
 	margin-top: 20px;
 	font-size: 0.8em;
 }
+
 .mostrarPersonajes .number {
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	font-size: 10px;
 	padding: 5px 10px;
 }
+
 .mostrarPersonajes .name {
 	margin: 13px 0 7px;
 	letter-spacing: 1px;
 }
- .mostrarPersonajes {
+
+.mostrarPersonajes {
   z-index: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap
 }
+
 .card {
     margin: 30px auto;
     width: 250px;
-    height: 290px;
+    height: 350px;
     border-radius: 40px;
     padding: 20px;
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     justify-content: space-around;
     transition: 0.4s;
-  }
-  .card:hover {
+    
+}
+
+
+.card:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
 
 .img-personajes {
     border-radius: 30px;
@@ -355,26 +428,30 @@ body {
      header h1 a{
         width:auto;
         }
-    .imgs{
+    .imgsPag1{
             width:100%;
         }
-   .reseña{
+   .reseñaPag1{
             width:80%;  
         }
     .pagina1{
             width: 70%;
         }
-    .selecciona{
+    .contenedorImgsYtxtSeleccionP2{
         width: 70%;
         text-align: center;
         }
-    .seleccion{
+    .imgSeleccionP2{
         width: 60%;
         height: 10%;
         text-align: center;
         }   
     .pagina2:before{
         width: 60%;
+    }
+    .nav {
+        width: 60%;
+
     }
 }    
 
@@ -390,19 +467,22 @@ body {
     header h1 a{
     width:auto;
     }
-    .imgs{
+    .imgsPag1{
         width:10%;
     }
-    .reseña{
+    .reseñaPag1{
         width:80%;
     }
     .conocemas{
         width: 30%;
     }
-    .selecciona{
+    .contenedorImgsYtxtSeleccionP2{
         width: 40%;
-        }
-    .seleccion{
+    }
+    .imgSeleccionP2{
         width: 70%;
-        }   
+    }  
+    .nav {
+        width: 70%;
+    } 
    }
