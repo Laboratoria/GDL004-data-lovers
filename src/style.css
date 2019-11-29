@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
 
@@ -146,6 +147,7 @@
     margin-left: auto;
     margin-right:auto;
     position: relative;  
+    font-family: 'Vidaloka', serif;
 }
 
 .contenedorImgsYtxtSeleccionP2{
@@ -155,7 +157,7 @@
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: vidaLoka
 }
 
 
@@ -206,6 +208,7 @@
     border-radius: 6px;
     margin-top: 19px;
     margin-left: 4px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .botonRegresar{
@@ -246,7 +249,7 @@
 }
 
 .mayusCasas{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Vidaloka', serif;
     font-size: 20px;
 }
 .imgCasas:hover{
@@ -273,23 +276,27 @@
 .filtrosPersonajes{
     text-align: center;
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .botonFiltros{
-    background-color: #4CAF50; /* Green */
+    
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    
 }
+
 
 .botonFiltros{
     background-color: white;
@@ -361,6 +368,20 @@ h1 {
 	font-size: 0.8em;
 }
 
+.strong{
+    font-family: 'Vidaloka', serif;
+}
+
+.personajesCards{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.actores{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
 .mostrarPersonajes .number {
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
@@ -384,13 +405,15 @@ h1 {
 .card {
     margin: 30px auto;
     width: 250px;
-    height: 350px;
+    height: 380px;
     border-radius: 40px;
     padding: 20px;
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     justify-content: space-around;
     transition: 0.4s;
+    font-family: 'Vidaloka', serif;
+    border-color: #333;
     
 }
 
@@ -411,6 +434,8 @@ h1 {
 
 .imagenesP{
     border-radius: 100px; 
+    width: 170px;
+    height:210px;
 }
 
 .nombre-actor-personaje {
@@ -486,3 +511,4 @@ h1 {
         width: 70%;
     } 
    }
+  
