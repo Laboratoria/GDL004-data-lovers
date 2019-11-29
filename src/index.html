@@ -8,76 +8,121 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
   </head>
   <body>
     
     <div id="pagina1"class="pagina1" >
-      <div class="imgs">
-      <img src="images/bienvenido.png" width="650" /> 
+      <div class="imgsPag1">
+        <img src="images/bienvenido.png" width="650" /> 
       </div>
         
-      <div class="reseña">
+      <div class="reseñaPag1">
         <p>Harry Potter es una serie de novelas fantásticas en la que se describen las aventuras del joven aprendiz de magia y hechicería  y sus amigos.<br><br> El argumento se centra en la lucha entre Harry Potter y el malvado mago Lord Voldemort, quien asesinó a los padres de Harry en su afán de conquistar el mundo mágico.</p>
       </div>  
       
-      <div class="imgs">
+      <div class="imgsPag1">
         <img src="images/logo harry poter.png" width="350"/>
       </div>  
 
-      <button class="conocemas" id="conocemas"> Conoce más </button>
+      <button class="botonConoceMas" id="conocemas"> Conoce más </button>
         
     </div>
-    <div id="pagina2">
+    
+    <div id="pagina2" class="pagina2">
+      <div class="imgLogoLetrasHarry">
+        <img src="images/logo harry poter.png" width="200"/>
+      </div>
+      <br>
+      <br>
       
-      <div class="seleccionaOpcion">
-      <button id ="seleccion-casas"class="seleccion" value="casas"> casas </button>
-      <button id ="seleccion-personajes"class="seleccion" value="allpersonajes">todos los personajes</button>
+      <div class="TextoSeleccionaOpcion" >
+        <h1>ELIGE UNA OPCIÓN</h1>
+      </div>         
+
+      <div class="contenedorImgsYtxtSeleccionP2" >
+        <div class="imgSeleccionP2">
+          <h2>Casas</h2>
+          <br>
+          <img src="images/CASAS DE HARRY POTTER.png" id="seleccion-casas" width="330"   height="330"  />
+        </div>
+                  
+        <div class="imgSeleccionP2">
+          <h2>Todos los personajes</h2>
+          <br>
+          <img src="images/PERSONAJES DE HARRY POTER2.png"   width="320" height="290"  id ="seleccion-personajes"/>
+        </div>  
+        
+      </div>
+    </div>
+      
+    <div id="pagina3">
+      <div class="navPag3">
+          <nav class="nav"> 
+            <button class="botonRegresar" id="regresarAPag2"> Atras </button> 
+            <div class="imgLogoLetrasHarry">
+              <img src="images/logo harry poter.png" width="150" height="70"/> 
+            </div> 
+          </nav>
       </div>
       
-    </div>  
+      <div class="personajes">
+        
+          <div class="describeCasas">
+              <div class="imgCasas">
+                <img src="images/grifindor.png" width="120" height="207"/>
+                
+                <p class="descripcionCasas"> <strong class="mayusCasas"> Gryffindor: </strong> <br> <br> Acepta en su casa a aquellos magos y brujas que tenían valentía, disposición y coraje.</p>
+              </div>  
+            
+            
+          </div>
 
-    <div id="pagina3">
-      
+          <div class="describeCasas">
+            <div class="imgCasas">
+              <img src="images/hufflepuff.png" width="120" height="207"/>
+              <p class="descripcionCasas"> <strong class="mayusCasas">Hufflepuff: </strong> <br>  <br> Busca alumnos leales, honestos, que no temen al trabajo pesado.</p>
+            </div>
+            
+          </div>
+
+          <div class="describeCasas">
+            <div class="imgCasas">
+              <img src="images/revenclaw.png" width="120" height="207"/>
+              <p class="descripcionCasas"> <strong class="mayusCasas"> Ravenclaw: </strong> <br>  <br> Busca alumnos académicos, estudiosos y que siempre sepan lo que hay que hacer.</p>
+            </div>
+          </div>
+
+          <div class="describeCasas">
+            <div class="imgCasas">
+              <img src="images/sytherin.png" width="120" height="207"/>
+              <p class="descripcionCasas"> <strong class="mayusCasas"> Slytherin: </strong>  <br>  <br> Caracterizada principalmente por la ambición y la astucia.</p>
+            </div>
+          </div>
+      </div>
     </div>
 
     <div id="pagina4">
-      <div class="nav">
-        <nav> <img src="images/logo harry poter.png" width="130" height="50"/> </nav>
-      </div>
-
-      
-        <!-- <button class="casas">HUMANOS</button>
-        
-        <select id="casas" class="casas">
-          <option value="Casas">Casas</option>
-          <option value="Gryffindor">Gryffindor</option>
-          <option value="Ravenclaw">Ravenclaw</option>
-          <option value="Slytherin">Slytherin</option>
-          <option value="Hufflepuff">Hufflepuff</option>
-        </select>
-
-        <button class="casas">FEMENINO</button>
-
-        <button class="casas">MASCULINO</button>
-      </div> -->
-      <div class="centro">
-      <p>Te presentamos los personajes mas importantes:</p>
-    </div>
+        <div class="navPag4">
+            <nav class="nav"> 
+              <button class="botonRegresar" id="regresarAPagina2"> Atras </button> 
+              <div class="imgLogoLetrasHarry">
+                <img src="images/logo harry poter.png" width="150" height="70"/> 
+              </div> 
+            </nav>
+        </div>
 
         
-      <div class="filtrados">
-        <button id ="hombres"class="filtros" value="male">Hombres </button>
-        <button id ="mujeres"class="filtros" value="female">Mujeres</button>
-        <button id ="OrdenarA-Z"class="filtros" >Ordenar A-Z</button>
-      </div>
-      
-      <div class ="sortAlfa">
-        <button id= "sortBy" value="alfa">Ordenar</button>
-      </div>
-      <div class ="filterAll">
-        <button id= "filterBy" value="alfa">Filtrar</button>
+      <div class="filtrosPersonajes">
+        <button id ="hombres"class="botonFiltros" value="male">Hombres </button>
+        <button id ="mujeres"class="botonFiltros" value="female">Mujeres</button>
+        <button id ="OrdenarA-Z"class="botonFiltros" >Ordenar A-Z</button>
       </div>
 
 

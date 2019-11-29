@@ -3,7 +3,6 @@
 
 }
 
-
 #pagina2{
     display: none;
 }
@@ -15,7 +14,7 @@
 #pagina4{
     display: none;
 }
-
+/* PAGINA 1 */
 .pagina1{
     background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
     background-repeat: no-repeat;
@@ -28,7 +27,6 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-
 }
 
 
@@ -50,15 +48,8 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/*z idex para indicar en que capa esta
-margi-left y margin rigth auto
-aling items center 
-material -icons  material desing
-box shadow -1px 4px 8px y el color 
-*/
 
-
-.conocemas{
+.botonConoceMas{
     position: absolute;
     bottom: 4%;
     color: white;
@@ -70,6 +61,7 @@ box shadow -1px 4px 8px y el color
     width: 130px;
     height: 30px;
     border-width: 1px;
+    
 }
 
 .conocemas:hover{
@@ -78,7 +70,7 @@ box shadow -1px 4px 8px y el color
     font-size: 15px;
 }
 
-.imgs{
+.imgsPag1{
     position: relative;
     margin-left: auto;
     margin-right:auto;
@@ -86,7 +78,7 @@ box shadow -1px 4px 8px y el color
 }
 
 
-.reseña{
+.reseñaPag1{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     width:600px;
@@ -99,126 +91,215 @@ box shadow -1px 4px 8px y el color
     margin: 2px;
     padding: 20px;
 }
-.reseña:first-letter{
+
+.reseñaPag1:first-letter{
     font-size: 35px;
     font-family: 'Bitter', serif;
     bottom: 6%;
 
 }
 
-.nav {
-    text-align: center;
-    margin: auto;
-    background-color: #333;
-    box-shadow: -1px 4px 8px gray;
-}
+ /*pagina 2 */
 
-
-#pagina2{
-    display: none;
-}
-
-.pagina1{
-    background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
+ .pagina2{
+    background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     margin: 0;
     position: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
+
 }
-.pagina1:before{
-    background-image: url("images/fondo\ estrellas\ full\ hd.jpg");
+
+.pagina2:before{
+    background-color: black;
     background-size: cover;
     background-position: center center;
     content: "";
+    height: 120%;
     width: 100vw;
-    height: 100vh;
     position: absolute;
-    opacity: .5;
+    opacity: .6;
     margin-left: auto;
     margin-right:auto;
 }
-.pagina1 img, p, input{
+
+
+
+.imgLogoLetrasHarry{
+    text-align: center;   
+    margin-left: 43%;
+    margin-right:auto;
     position: relative;
-    font-family: 'Josefin Sans', sans-serif;
+    width: 100px;
 }
-/*z idex para indicar en que capa esta
-margi-left y margin rigth auto
-aling items center
-material -icons  material desing
-box shadow -1px 4px 8px y el color
-*/
-.conocemas{
-    position: absolute;
-    bottom: 4%;
-    color: white;
-    border-radius: 15px;
-    font-size: 14px;
-    padding: 5px;
-    background: transparent;
-    font-family: 'Josefin Sans', sans-serif;
-    width: 130px;
-    height: 30px;
-    border-width: 1px;
-}
-.conocemas:hover{
-    border-color:white;
-    border-width: 2px;
-    font-size: 15px;
-}
-.imgs{
-    position: relative;
+
+.TextoSeleccionaOpcion{
+    text-align: center;   
     margin-left: auto;
     margin-right:auto;
-    align-items: center;
-    display: inline-block;
+    position: relative;  
 }
-.reseña{
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    width:600px;
-    height: auto;
-    font-size: 14px;
+
+.contenedorImgsYtxtSeleccionP2{
     text-align: center;
-    margin: auto;
-    position: absolute;
-    bottom: 7%;
-    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.imgSeleccionP2{
+    margin: 50px;
     padding: 20px;
+    
+    
 }
-.reseña:first-letter{
-    font-size: 35px;
-    font-family: 'Bitter', serif;
-    bottom: 6%;
+.imgSeleccionP2:hover{
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
+
+/* pagina 3 */
+.pagina3{
+    align-items: center;
+    text-align: center;
+
+}
+
 .nav {
     text-align: center;
     margin: auto;
     background-color: #333;
-    box-shadow: -1px 4px 8px gray;
-    z-index: 999;
+    box-shadow:-1px 4px 8px gray;
+    width: 100vw;
+    display: flex;
+    z-index: 3;
+    padding: 10px;
 }
-.filtrados{
+
+.botonRegresar{
+    background-color: white;
+    border: none;
+    color:black;
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 19px;
+    margin-left: 4px;
+}
+
+.botonRegresar{
+    background-color: #555555;
+    color: white;
+    
+}
+
+.botonRegresar:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+
+
+.imgCasas{
+    margin: 30px;
+    width: 230px;
+    height: 480px;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.descripcionCasas{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    margin: 2px;
+    padding: 20px;
+
+}
+
+.mayusCasas{
+    font-family: 'Vidaloka', serif;
+    font-size: 20px;
+}
+.imgCasas:hover{
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.describeCasas {
+    text-align: center;
+}
+
+/* pagina 4 */
+.nav {
+    text-align: center;
+    margin: auto;
+    background-color: #333;
+    box-shadow:-1px 4px 8px gray;
+    z-index: 999;
+    width: 100vw;
+}
+
+
+.filtrosPersonajes{
     text-align: center;
     padding: 10px;
 }
-.casas{
-    background-color: transparent;
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+
+.botonFiltros{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
     text-align: center;
-    padding: 3px;
-    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 6px;
 }
-.casas:hover{
+
+.botonFiltros{
+    background-color: white;
     color: black;
-    background: rgb(3, 67, 119);
+    border: 2px solid #555555;
+}
+
+.botonFiltros:hover{
+    background-color: #555555;
+    color: white;
 }
 
 * {
@@ -237,26 +318,13 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Lato';
 	margin: 0;
 }
-.nav {
-    text-align: center;
-    margin: auto;
-    background-color: #333;
-    box-shadow:-1px 4px 8px gray;
-    z-index: 999;
-}
 
-
- h1 {
-	letter-spacing: 3px;
-} 
-
-
- h1 {
+h1 {
 	letter-spacing: 3px;
 }
+
 .personajes {
 	display: flex;
 	flex-wrap: wrap;
@@ -265,17 +333,20 @@ body {
 	margin: 0 auto;
 	max-width: 1200px;
 }
+
 .mostrarPersonajes{
-	background-color: #eee;
+	background-color: rgb(49, 43, 43);
 	border-radius: 20px;
 	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 	margin: 10px;
 	padding: 20px;
 	text-align: center;
 }
+
 .centro{
     text-align: center;
 }
+
 .mostrarPersonajes .img-container {
 	background-color: rgba(255, 255, 255, 0.6);
 	border-radius: 50%;
@@ -293,6 +364,7 @@ body {
 	margin-top: 20px;
 	font-size: 0.8em;
 }
+
 .mostrarPersonajes .number {
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
@@ -305,31 +377,35 @@ body {
 	letter-spacing: 1px;
 }
 
- .mostrarPersonajes {
+.mostrarPersonajes {
   z-index: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap
 }
+
 .card {
     margin: 30px auto;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     border-radius: 40px;
     padding: 20px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     justify-content: space-around;
     transition: 0.4s;
-  }
-  .card:hover {
+    
+}
+
+
+.card:hover {
     transform: scale(0.9, 0.9);
 
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
 .img-personajes {
     border-radius: 30px;
     position: flex;
@@ -337,59 +413,55 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.imagenesP{
+    border-radius: 100px; 
+}
+
 .nombre-actor-personaje {
     text-align: center;
+}
 
-} 
 
-/* @media screen and (max-width: 480px) {
-
-	.social-panel-container.visible {
-		transform: translateX(0px);
-	}
-	
-} */
-
-/* medidas para celular */
-@media screen and (min-width: 359px) {
-    .imgs {
-        width: 78%;
-    
-    }
-    .reseña{
-        width: 90%;
-    }
-
-    .img {
-       width:100%;
-    }
-    .nav {
-        
-        width:70%;
-    }
-        
-            
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    img {
+        max-width:290px;
+        }
      #container{
         width:auto;
-        } 
-        
-         header h1 a{
+        }
+     header h1 a{
         width:auto;
         }
-  }
+    .imgsPag1{
+            width:100%;
+        }
+   .reseñaPag1{
+            width:80%;  
+        }
+    .pagina1{
+            width: 70%;
+        }
+    .contenedorImgsYtxtSeleccionP2{
+        width: 70%;
+        text-align: center;
+        }
+    .imgSeleccionP2{
+        width: 60%;
+        height: 10%;
+        text-align: center;
+        }   
+    .pagina2:before{
+        width: 60%;
+    }
+    .nav {
+        width: 60%;
+
+    }
+}    
 
 
-  /* medidas para tablet */
-@media screen and (min-width: 360px) and (max-width: 480px ) {
-    .imgs {
-        width: 80%;
-    
-    }
-    .reseña{
-        width: 490px;
-    }
-       
-}
+
 @media screen and (max-width:600px){
     img {
     max-width:290px;
@@ -402,7 +474,22 @@ body {
     header h1 a{
     width:auto;
     }
- }
-
-   
-
+    .imgsPag1{
+        width:10%;
+    }
+    .reseñaPag1{
+        width:80%;
+    }
+    .conocemas{
+        width: 30%;
+    }
+    .contenedorImgsYtxtSeleccionP2{
+        width: 40%;
+    }
+    .imgSeleccionP2{
+        width: 70%;
+    }  
+    .nav {
+        width: 70%;
+    } 
+   }
