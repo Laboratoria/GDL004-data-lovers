@@ -24,7 +24,6 @@
     height: 100vh;
     width: 100vw;
     margin: 0;
-    position: flex;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -79,7 +78,7 @@
 }
 
 
-.reseñaPag1{
+.resenaPag1{
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     width:600px;
@@ -93,7 +92,7 @@
     padding: 20px;
 }
 
-.reseñaPag1:first-letter{
+.resenaPag1:first-letter{
     font-size: 35px;
     font-family: 'Bitter', serif;
     bottom: 6%;
@@ -142,7 +141,7 @@
     width: 100px;
 }
 
-.TextoSeleccionaOpcion{
+.textoSeleccionaOpcion{
     text-align: center;   
     margin-left: auto;
     margin-right:auto;
@@ -311,11 +310,15 @@
 * {
 	box-sizing: border-box;
 }
+* {
+	box-sizing: border-box;
+}
 
 body {
 	background: #EFEFBB;
 	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
 	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -419,6 +422,7 @@ h1 {
 
 .card:hover {
     transform: scale(0.9, 0.9);
+
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
     -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
@@ -455,7 +459,7 @@ h1 {
     .imgsPag1{
             width:100%;
         }
-   .reseñaPag1{
+   .resenaPag1{
             width:80%;  
         }
     .pagina1{
@@ -483,16 +487,18 @@ h1 {
     img {
     max-width:290px;
     }
+
     #container{
     width:auto;
-    }
+    } 
+
     header h1 a{
     width:auto;
     }
     .imgsPag1{
         width:10%;
     }
-    .reseñaPag1{
+    .resenaPag1{
         width:80%;
     }
     .conocemas{
