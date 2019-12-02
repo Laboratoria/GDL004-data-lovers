@@ -1,13 +1,4 @@
-/* Manejo de data */
-
-// esta es una función de ejemplo
-
-export const example = () => {
-  return 'example';
-};
-
 export const filtrarPorCasa = (tipoCasa, potterObj) => {
-
   const resultado = potterObj.filter( (elementoActual) =>{
       if(elementoActual.house === tipoCasa) {
           return true;
@@ -41,7 +32,7 @@ const comparaObjDes = (objeto1, objeto2) => {
   }
   return 0
  };
- 
+
  export const ordenarDescendente = (potterObj) => {
    const valoresOrdenadosDes = potterObj.sort(comparaObjDes);
    console.log(valoresOrdenadosDes);

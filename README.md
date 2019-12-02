@@ -96,6 +96,7 @@ a los personajes por su nombre
 
 #### Prototipo de baja fidelidad
 
+![Aquí la descripción de la imagen por si no carga](https://github.com/reggieraccoon/GDL004-data-lovers/blob/master/photo_2019-11-28_09-36-54.jpg)
 
 
 #### Prototipo de alta fidelidad
