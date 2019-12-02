@@ -17,15 +17,14 @@ El usuario puede conocer un poco de la pelicula, de sus personajes, lo esencial 
 
 ## 2. Imagen final
 
-/agregar iamgen final
-
-
+![src/readme fotosHP/readme bienvenida.png](https://raw.githubusercontent.com/MonseSalasVi/GDL004-data-lovers/develop/src/FotosHP/readme%20bienvenida.png)
+![src/readme fotosHP/readme houses.png](https://raw.githubusercontent.com/MonseSalasVi/GDL004-data-lovers/develop/src/FotosHP/readme%20houses.png)
+![src/readme fotosHP/readme character.png](https://raw.githubusercontent.com/MonseSalasVi/GDL004-data-lovers/develop/src/FotosHP/readme%20character.png)
+![src/readme fotosHP/readme books.png](https://raw.githubusercontent.com/MonseSalasVi/GDL004-data-lovers/develop/src/FotosHP/readme%20books.png)
 
 ## 3. Historias de Usuario
 
-//agregar foto de la imagen
-
-* [Historia de Usuario][link](https://drive.google.com/open?id=1BZC5nWIqYkhGugJnagX1i-ARd05hqsSA):
+ ![src/readme fotosHP/readme husuario.png](https://raw.githubusercontent.com/MonseSalasVi/GDL004-data-lovers/develop/src/FotosHP/readme%20husuario.jpeg):
   1. Mediante la pagina de bienvenida, el usuario puede saber de que es/ trata la pag.
   2. En el area de personajes, el usuario puede interactuar y filtrar.
 
@@ -63,7 +62,6 @@ El usuario puede conocer un poco de la pelicula, de sus personajes, lo esencial 
 - [ ] Utilizar linter para seguir buenas prácticas (ESLINT).
 
 
-## 4. Protitipo de papel
+## 4. Prototipo de papel
 
-[prototipo][link](https://drive.google.com/open?id=1BJn9tRzULpFwouzmiSgN14ghsiuepC5j)
-[prototipo2][link](https://drive.google.com/open?id=1BPFPv3fpeVoIMlFg4PyuLuA9gZaqxCyb)
+![src/readme fotosHP/readme prototipo.png][link](https://raw.githubusercontent.com/MonseSalasVi/GDL004-data-lovers/develop/src/FotosHP/readme%20prototipo.jpeg)

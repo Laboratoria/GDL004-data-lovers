@@ -1,77 +1,209 @@
-html{
+body{
   font-family: 'Germania One', cursive;
-  background-repeat: no-repeat;
   /* background: url(/FotosHP/hederr.jpeg); */
 }
 /* hablar al id # class . */
 header{
   text-align: center;
   font-size: 50px;
+  color: goldenrod;
 }
-
+/* titulo */
+.title{
+  font-size: 30px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  color: goldenrod;
+}
+p#titulo{
+  align-self: center;
+  font-size: 5rem;
+}
+/*  LO QUE VA EN WELCOME */
 .welcomes{
   font-size: 30px;
   height: 500px;
   text-align: center;
-  color: #E28936;
-
+  color: goldenrod;
+  background-color: #F9E79F;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
 }
-.buttuns .button {
+/* botones */
+.buttons .button {
   font-size: 16px;
-  margin: 4px 2px;
-  border-radius: 12px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  border-radius: 20px;
 }
 .button{
-  float:left;
-  background-color: #black;
-  border: ##e7e7e7; color: black;
-  color: white;
+  background-color: transparent;
+  border: none;
+  color: gold;
   padding: 15px 32px;
   text-align: center;
 }
-.button:hover {
-  background-color: #4CAF50; /* Green */
-  color: white;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+li {
+  display: inline;
+}
+li a{
+  display: block;
+  font-family: 'Germania One', cursive;
+  font-size: 20px;
+  color:#FFAE00;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  border-radius: 35px;
+}
+li a:hover {
+  background: #C78800;
+  background-image: -webkit-linear-gradient(top, #C78800, #010305);
+  background-image: -moz-linear-gradient(top, #C78800, #010305);
+  background-image: -ms-linear-gradient(top, #C78800, #010305);
+  background-image: -o-linear-gradient(top, #C78800, #010305);
+  background-image: linear-gradient(to bottom, #C78800, #010305);
+  -webkit-border-radius: 20px;
+  -webkit-transition-duration: 0.4s;
+  transation-duration: 0.4s;
+  text-decoration: none;
 }
 
-.Houses{
-  text-align: left;
 
+/* houses text */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+/* LO QUE VA EN HOUSE */
+.Houses{
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 25px;
+  background-color: #F9E79F;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
 }
 .Houses .logo{
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 15px;
   float: right;
-  width: 250px;
+  width: 300px;
 }
-.Houses h1 {
-  text-align: center;}
-.Houses h2{
+.Houses p{
+  color: goldenrod;
+}
+/* LO QUE VA EN CHARACTERS */
+.characters h1{
+  color: white;
   text-align: center;
 }
-
 .characters{
   font-size: 20px;
-  color: green;
-
+  color: goldenrod;
+  background-color: #F9E79F;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
 }
-
-.books{
-  text-align: right;
-
-}
-
-#content img {
-  width: 100px;
-  height: 50%;
-}
-
-
-
-/* medidas fata divs fondos
-background-image: url(/FotosHP/libros.jpg);
-background-repeat: no-repeat;
-border: 2px solid black;
-padding: 25px;
-background-size: 100% 100%;
+/* lISTA DESPLEGABLEEE azul 44558f  celeste e6f7f7 crema ffc97b
+crema claro ffe495 gris e8e2db naranja fda831
 */
+
+select {
+  font-family: 'Germania One', cursive;
+  position: relative;
+  margin-bottom: 15px;
+
+  width: 10%;
+  cursor: pointer;
+  padding: 8px 19px;
+  outline: 0;
+  border: 1px hidden #ffffff;
+  border-radius: 10px;
+  background: #d6ce90;
+  color: #130505;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select::-ms-expand {
+  display: none;
+}
+.select:hover,
+.select:focus {
+  color: #000000;
+  background: #d69b42;
+}
+.select:disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* ESPECIFICO DEL CONTENIDO */
+#content {
+  position: relative;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+* {box-sizing: border-box;}
+#content img {
+  margin: 20px 0 0 0;
+  width: 170px;
+  height: 210px;
+  padding: 0% 10% 0% 0%;
+}
+#content h1{
+  position: absolute;
+  bottom: -10px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 90%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+#content:hover h1{
+  opacity: 1;
+}
+.pchar{
+  position: relative;
+}
+
+
+/* LO QUE VA EN LIBROS */
+.books{
+  text-align: center;
+  color: goldenrod;
+  background-color: goldenrod;
+  background: rgb(0, 10, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+.onebook{
+  display: flex;
+  flex-wrap: wrap;
+}
