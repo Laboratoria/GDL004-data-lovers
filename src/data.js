@@ -20,7 +20,7 @@ const comparaObj = (objeto1, objeto2) => {
  return 0
 };
 
-export const ordenarAscendente = (potterObj) => { //Creo que esto debe de ir en la línea 21
+export const ordenarAscendente = (potterObj) => { 
   const valoresOrdenados = potterObj.sort(comparaObj);
   return valoresOrdenados;
 };
@@ -36,6 +36,5 @@ const comparaObjDes = (objeto1, objeto2) => {
 
  export const ordenarDescendente = (potterObj) => {
    const valoresOrdenadosDes = potterObj.sort(comparaObjDes);
-   console.log(valoresOrdenadosDes);
    return valoresOrdenadosDes;
  };
