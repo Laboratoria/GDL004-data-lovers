@@ -101,3 +101,5 @@ a los personajes por su nombre
 #### Prototipo de alta fidelidad
 
 https://www.figma.com/file/jNAfgu5vycxOJvDDwDtCH5/Data-lovers?node-id=0%3A1
+
+https://reggieraccoon.github.io/GDL004-data-lovers/src/index.html 
