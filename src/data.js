@@ -10,6 +10,7 @@ export const filtrarPorCasa = (tipoCasa, potterObj) => {
   return resultado;
 };
 
+
 const comparaObj = (objeto1, objeto2) => {
  if(objeto1.name > objeto2.name) {
    return 1;

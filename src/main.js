@@ -1,14 +1,6 @@
 import potterObj from './data/potter/potter.js';
 import { filtrarPorCasa, ordenarAscendente, ordenarDescendente } from './data.js';
 
-/*
-const verModal = (event) => {
-    const anchorElement = event.target;
-    const referenciaPadre = anchorElement.closest(".infoMostrada");
-    const divSeeMore = referenciaPadre.querySelector(".masInfo");
-    console.log (divSeeMore);
-}
-*/
 const funcionMostrar = (arregloPersonajes) => {
     const divsContenedor = document.querySelector("#seccionDeDatos");
     divsContenedor.classList.add("personajesOrdenados");
