@@ -1,4 +1,4 @@
-// importamos la función `example`
+/* importamos la función `example`
 import { example } from "../src/data";
 
 describe('example', () => {
@@ -11,3 +11,16 @@ describe('example', () => {
     // escribe aquí tu test
   });
 });
+*/
+// importamos la función `example`
+import { ordenarPorNombre } from "../src/data";
+describe('ordenarPorNombre', () => {
+  it('debería ordenar objetos en array por nombre', () => {
+    expect(typeof ordenarPorNombre).toBe('function');
+  });
+  describe('ordenarPorNombre', () => {
+  });
+});
+// organizar arrange
+// actuar    act
+// afirmar   assert

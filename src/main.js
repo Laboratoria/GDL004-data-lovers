@@ -4,14 +4,28 @@
  import {todosLosPersonajes, hombres, mujeres, ordenarPorNombre} from './data.js';
  
 
-let conoceMas= document.getElementById ("conocemas");
+let bottonconoceMas= document.getElementById ("conocemas");
 let selCasas= document.getElementById ("seleccion-casas");
 let selPersonajes= document.getElementById ("seleccion-personajes");
+let regresarPagina4a2= document.getElementById ("regresarAPagina2");
+let regresarPagina3a2= document.getElementById ("regresarAPag2");
 
-conoceMas.addEventListener("click", () => {
-    document.getElementById("pagina1").style.display = "none";
-    document.getElementById("pagina2").style.display = "block";
+
+bottonconoceMas.addEventListener("click", () => {
+  document.getElementById("pagina1").style.display = "none";
+  document.getElementById("pagina2").style.display = "block";
 });
+
+regresarPagina4a2.addEventListener("click", () => {
+  document.getElementById("pagina4").style.display = "none";
+  document.getElementById("pagina2").style.display = "block";
+});
+
+regresarPagina3a2.addEventListener("click", () => {
+  document.getElementById("pagina3").style.display = "none";
+  document.getElementById("pagina2").style.display = "block";
+});
+
 
 selCasas.addEventListener("click", () => {
   document.getElementById("pagina2").style.display = "none";
@@ -82,12 +96,20 @@ function mostrarPersonajes(personaje){
     divImg.appendChild(img)
   // esta linea le agrega el atributo del src a la imagen
     img.setAttribute("src",personaje[i].image);
-    img.setAttribute("width",150);
-    img.setAttribute("height",200);
+  // esta linea le agrega la classe a las imagenes.
+    img.classList.add("imagenesP")
     // agregando una clase al p1
     p1.classList.add("nombre-actor-personaje");
-  // esta linea le agrega al elemento p1 el nombre del personaje
-    p1.innerText = "Personaje: "+personaje[i].name;
+  // esta linea Crea el personaje y lo muestra en el html
+    const crearPersonaje =
+    ` <div class="personajesCards">
+    <strong> 
+         Personaje: 
+      </strong> 
+      <h2> ${personaje[i].name} </h2>
+      </div> 
+     `;
+    p1.innerHTML= crearPersonaje;
   // esta linea le agrega al div principal el nombre del personaje
     card.appendChild(p1);
   // esta linea le agrega un salto de linea entre personaje y actor
@@ -95,7 +117,9 @@ function mostrarPersonajes(personaje){
     // agregando una clase al p2
     p2.classList.add("nombre-actor-personaje");
   // esta linea le agrega al p2  el nombre del actor
-    p2.innerText = "Actor: "+ personaje[i].actor;
+    const crearActor=
+    `<div class="actores"> <strong>Actor:  </strong>${personaje[i].actor}</div>`;
+    p2.innerHTML=crearActor;
   // esta linea le agrega al div principal el nombre del actor
     card.appendChild(p2);
   //esta linea le agrega todas las cards al div principal
