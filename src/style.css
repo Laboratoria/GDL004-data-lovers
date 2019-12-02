@@ -1,0 +1,308 @@
+
+body {
+	background-image: url(images/pkm-uni.jpg);
+	margin: 0;
+  margin-bottom: 40px;
+	}
+  marquee {
+    display: flex;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+
+/*Logo  */
+
+#logoPKM{
+  display: flex;
+justify-content: center;
+
+}
+
+
+#pokebolas{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  flex-basis:100px;
+  flex-grow:1;
+}
+
+.TyperG{
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.TyperW {
+
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis:200px;
+  flex-grow:1;
+  flex-shrink:1;
+
+}
+
+.TyperR{
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+.contenedor1{
+display: flex;
+flex-flow: row wrap;
+justify-content:center;
+align-items: center;
+display:none;
+
+
+
+}
+
+.contenedor1 .card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin:20px;
+  text-align: center;
+transition: all 0.25s;
+align-self: center;
+background-color: white;
+
+}
+
+.contenedor1 .card:hover{
+transform: translateY(-15px);
+box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor1.card img{
+  width: 330px;
+height: 220px;
+}
+
+.contenedor1.card h1{
+  font-weight: 600;
+}
+
+.contenedor1.card p{
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 1rem;
+  text-align: center;
+}
+.contenedor2{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:center;
+	align-items: center;
+	display:none;
+	}
+	/* contenedor child grass*/
+	.contenedor2 .card2{
+	  width: 310px;
+	  height:300px;
+	  border-radius: 8px;
+	  margin:20px;
+	  text-align: center;
+	transition: all 0.25s;
+	align-self: center;
+	background-color: white;
+	}
+	/* hover de  child grass*/
+	.contenedor2 .card2:hover{
+	transform: translateY(-15px);
+	}
+	/*estilo imagen  y texto */
+	.contenedor2.card2 img{
+	  width: 330px;
+	height: 220px;
+	}
+	.contenedor2.card2 h1{
+	  font-weight: 600;
+	}
+	.contenedor2.card2 p{
+	  font-weight: 300;
+	  font-size: 16px;
+	  padding: 0 1rem;
+	  text-align: center;}
+
+	.contenedor3{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content:center;
+			align-items: center;
+			display:none;
+			}
+			/* contenedor child grass*/
+			.contenedor3 .card3{
+			  width: 310px;
+			  height:300px;
+			  border-radius: 8px;
+			  margin:20px;
+			  text-align: center;
+			transition: all 0.25s;
+			align-self: center;
+			background-color: white;
+			}
+			/* hover de  child grass*/
+			.contenedor3 .card3:hover{
+			transform: translateY(-15px);
+			}
+			/*estilo imagen  y texto */
+			.contenedor3.card3 img{
+			  width: 330px;
+			height: 220px;
+			}
+			.contenedor3.card3 h1{
+			  font-weight: 600;
+			}
+			.contenedor3.card3 p{
+			  font-weight: 300;
+			  font-size: 16px;
+			  padding: 0 1rem;
+			  text-align: center;}
+				.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/********** 2do tooltip water ***/
+.tooltip2 {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
+}
+.tooltip2 .tooltiptext2 {
+visibility: hidden;
+width: 220px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+}
+.tooltip2:hover .tooltiptext2 {
+visibility: visible;
+}
+
+/********** 3er tooltip water ***/
+.tooltip3 {
+position: relative;
+display: inline-block;
+
+border-bottom: 1px dotted black;
+
+  border-bottom: 1px dotted black;
+}
+
+#logoPKM{
+  display: flex;
+justify-content: center;
+}
+@media screen and (max-width:600px){
+  body{
+
+
+}
+
+}
+.tooltip3 .tooltiptext3 {
+visibility: hidden;
+width: 220px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+}
+.tooltip3:hover .tooltiptext3 {
+visibility: visible;
+}
+/* footer*/
+
+
+
+
+
+footer .contenedorf {
+	background-color:black;
+  color:white;
+width: 100%;
+
+padding: 25px;
+
+
+display: flex;
+justify-content: center;
+	flex-wrap: wrap;
+	bottom: 0;
+	position: absolute;
+
+}
+
+
+   #buttonW{
+     display:block;
+   	 }
+
+     #buttonR{
+       display:block;
+       }
+
+#logoPKM{
+  display: flex;
+justify-content: center;
+}
+@media screen and (max-width:600px){
+  body{
+}
+}
+@media screen and (max-width:360px){
+  body{
+
+  }
+
+
+
+}

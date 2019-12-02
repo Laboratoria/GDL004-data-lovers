@@ -6,9 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="main.js"></script>
-  </body>
+  <!--  inicia body ,no mover arriba-->
+
+<body>
+
+  <!-- NO TOCAR-->
+ <script type="module" src="main.js"></script>
+ <div id="root">
+   <script src="./data/pokemon/pokemon.js" type="module"></script>
+    <script src="data.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+
+  <!--  logo -->
+
+     <header id="logoPKM">
+      <img src="images/International_Pokémon_logo.svg.png">
+    </header>
+    <!--  gif -->
+ <marquee direction=right scrolldelay="5"><img src="images/pikagif.gif"></marquee>
+
+ <!--  botones -->
+<div id="pokebolas">
+  <!--  boton grass -->
+  <div class="tooltip">
+    <span class="tooltiptext">Presiona aqui y conoce la debilidad de los pokemones tipo Grass</span>
+    <div id="TyperGrass" class= "TyperG">
+<a id="button" ><img class= "grass" src="images/pokebolagrass.png"></a>
+            <div id="content1" class="contenedor1 ">
+
+              </div>
+           </div><!-- este div es donde se manda el map no borrar-->
+    </div>
+
+    <!--  boton water -->
+    <div class="tooltip2">
+      <span class="tooltiptext2">Presiona aqui y conoce la debilidad de los pokemones tipo Water</span>
+     <div id="TyperWater" class="TyperW">
+     <a id="buttonW" ><img class= "water" src="images/pokebolawater.png"></a>
+             <div id="content2" class="contenedor2 ">
+         </div>
+      </div>
+    </div>
+
+      <!--  boton rock -->
+      <div class="tooltip3">
+        <span class="tooltiptext3">Presiona aqui y conoce la debilidad de los pokemones tipo Rock</span>
+      <div id="TyperRock" class="TyperR">
+ <a id="buttonR" ><img class= "rock" src="images/pokebolarock.png"></a>
+        <div id="content3" class="contenedor3 ">
+           </div>
+        </div>
+    </div>
+  </div>
+
+    <!--  Pie de pagina -->
+
+<footer>
+<div class="contenedorf">
+  <h2><strong>Redes Sociales </strong></h2>
+
+  <a href="TU DIRECCION DE TWITTER" target="_blank" ><img src="http://2.bp.blogspot.com/-KVx3pHuLjTU/UwJJ-nmXAKI/AAAAAAAAL0A/xZOdy-WSGbE/s1600/twitter.png" /></a>
+
+  <a href="TU DIRECCION DE GOOGLE+" target="_blank"><img src="http://3.bp.blogspot.com/-PfEM3EjAsaY/UwJJwy7dKyI/AAAAAAAALz4/bSzCTvnPt70/s1600/googleplus.png" /></a>
+
+  <a href="TU DIRECCION DE FACEBOOK" target="_blank"><img src="http://3.bp.blogspot.com/-wlgJ5-sFi5Q/UwJKFJU3dsI/AAAAAAAAL0I/wMHiOkPcsMU/s1600/facebook.png" /></a>
+
+  <a href="TU DIRECCION DE FEED" target="_blank"><img src="http://3.bp.blogspot.com/-jjhKe8yf2RE/UwJKKmPrxaI/AAAAAAAAL0Q/iwRG2fkix08/s1600/feedrss.png" /></a>
+</div><!-- fin de class bar-->
+
+ </footer>
+
+
+
+</body>
 </html>
