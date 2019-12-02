@@ -1,82 +1,145 @@
-
-//import POKEMON from './data/pokemon/pokemon.js'
-//console.log(POKEMON);
-
 import Pokemon from './data/pokemon/pokemon.js'
 console.log(Pokemon);
+import {filterType, ordenName} from './data.js'//filtro grass
+import {filterWater} from './data.js' //filtro water
+import {filterRock} from './data.js' //filtro Rock
 
-
-import {filterType, ordenName} from './data.js'
-//console.log();
 
 let poke= filterType(Pokemon);//filterType es nuestro filter y Pokemon es la data con la que trabaja
-ordenName(poke)
-//console.log(poke)
+ordenName(poke)//sort de grass
+
+
+let pokew= filterWater(Pokemon); //Variable filter water
+ordenName(pokew)//sort de agua
+
+let pokeR= filterRock(Pokemon);//filterRock
+ordenName(poke)//sort de rock
+
+
+//mostrando filtro Grass a HTML class con map
 poke.map((pkm)=>{
- //console.log(pkm)
-//let ftp = createElement('span') ya no se va a crear
-const template = `<div>${pkm.name}
+const template = `<div class="card">
+<h1>${pkm.name}</h1>
 <img src="${pkm.img}"></img>
+<h3>Weaknesses:</h3>
+<p> ${pkm.weaknesses}</p>
 </div>`
-//ftp.innerHTML=template;
-document.getElementById('content').innerHTML += template
+document.getElementById('content1').innerHTML += template
 }); //En content se muesta el template
 
-//function homeIcon() {
 
-  //  document.getElementById('content').style.display = "none";
-
-  //  document.getElementById('home').style.display = 'block';
-
-//}
-
-//document.getElementById('homeBtn').addEventListener('click', homeIcon);
-//funcion para cambiar a la pantalla de comparar al darle click en 'compareBtn' se encuentran los selectores
-//function compare() {
-  //  document.getElementById('home').style.display = "none"; //darle invisibilidad
-  //  document.getElementById('content').style.display = "block"; //mostrar el bloque (pantalla/slide)
-//}
-//document.getElementById('compareBtn').addEventListener('click', compare);
-//import {filterType,filterWater} from './data.js'
-
-//let poke= filterType(Pokemon);//filterType es nuestro filter y Pokemon es la data con la que trabaja
-
-
-//let pokew= filterWater(Pokemon);
-
-//console.log(poke)
-//poke.map((pkm)=>{
-  //console.log(pkm)
-//let ftp = createElement('span') ya no se va a crear
-//const template = `<div>${pkm.name}
-//<img src="${pkm.img}"></img>
-//<div>${pkm.weaknesses}</div>
-//</div>`
-//ftp.innerHTML=template;
-//document.getElementById('content').innerHTML += template
-//});
-
-
-var contentVisible = false;
+//boton grass
+var contentVisible = true;
 document.addEventListener("click", function(e) {
     var clicked = e.target;
-    var content = document.getElementById("content");
-    if (contentVisible && clicked != content) {
-            content.style.display = "none";
-            contentVisible = false;
-        }
-
-}, false);
+    var content = document.getElementById("content1");
+  }, true);
 
 document.getElementById("button").addEventListener("click", function(e) {
-    var content = document.getElementById("content");
+    var content = document.getElementById("content1");
+    var content2 = document.getElementById("content2");
+    var content3 = document.getElementById("content3");
+
+    e.preventDefault();
+
+   //e.stopPropagation();
+   if (contentVisible){
+       content.style.display = "flex";
+       contentVisible = false;
+       content2.style.display = "none";
+       content3.style.display = "none";
+   } else {
+       content.style.display = "none";
+       contentVisible = true;
+       content2.style.display = "none";
+       content3.style.display = "none";
+
+    }
+}, false);// fin boton grass
+
+
+//mostrando filtro Water a HTML class con map
+pokew.map((pkm)=>{
+const template1 = `<div class="card2">
+<h1>${pkm.name}</h1>
+<img src="${pkm.img}"></img>
+<h3>Weaknesses:</h3>
+<p>${pkm.weaknesses}</p>
+</div>`
+document.getElementById('content2').innerHTML += template1
+});
+
+
+//boton water
+var contentVisible = true;
+document.addEventListener("click", function(e) {
+    var clicked = e.target;
+    var content = document.getElementById("content2");
+  }, true);
+
+document.getElementById("buttonW").addEventListener("click", function(e) {
+    var content = document.getElementById("content2");
+    var content2 = document.getElementById("content1");
+    var content3 = document.getElementById("content3");
+
+    e.preventDefault();
+
+   //e.stopPropagation();
+   if (contentVisible){
+       content.style.display = "flex";
+       contentVisible = false;
+       content2.style.display = "none";
+       content3.style.display = "none";
+   } else {
+       content.style.display = "none";
+       contentVisible = true;
+       content2.style.display = "none";
+       content3.style.display = "none";
+
+    }
+}, false);// fin boton water
+
+//mostrando filtro Rock a HTML class con map
+pokeR.map((pkm)=>{
+const template2 = `<div class="card3">
+<h1>${pkm.name}</h1>
+<img src="${pkm.img}" ></img>
+<h3>Weaknesses:</h3>
+<div>${pkm.weaknesses}</div>
+</div>`
+document.getElementById('content3').innerHTML += template2
+}); //En content se muesta el template
+
+
+//boton rock
+
+var contentVisible = true;
+document.addEventListener("click", function(e) {
+    var clicked = e.target;
+    var content = document.getElementById("content3");
+  }, true);
+
+document.getElementById("buttonR").addEventListener("click", function(e) {
+    var content = document.getElementById("content3");
+    var content2 = document.getElementById("content1");
+    var content3 = document.getElementById("content2");
+
+
     //e.preventDefault();
    e.stopPropagation();
     if (contentVisible){
-        content.style.display = "block";
+        content.style.display = "flex";
         contentVisible = false;
+        content2.style.display = "none";
+        content3.style.display = "none";
+
+
     } else {
         content.style.display = "none";
         contentVisible = true;
+        content2.style.display = "none";
+        content3.style.display = "none";
+
+
     }
-}, false);
+}, false);// fin boton water
