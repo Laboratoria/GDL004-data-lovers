@@ -64,4 +64,4 @@ El usuario puede conocer un poco de la pelicula, de sus personajes, lo esencial 
 
 ## 4. Prototipo de papel
 
-![src/readme fotosHP/readme prototipo.png][link](https://raw.githubusercontent.com/MonseSalasVi/GDL004-data-lovers/develop/src/FotosHP/readme%20prototipo.jpeg)
+![prototipo](https://raw.githubusercontent.com/MonseSalasVi/GDL004-data-lovers/develop/src/FotosHP/readme%20prototipo.jpeg)
