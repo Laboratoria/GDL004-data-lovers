@@ -436,7 +436,7 @@ h1 {
     width: auto;
   }
   .imgsPag1 {
-    width: 100%;
+    width: 70%;
   }
   .resenaPag1 {
     width: 80%;
@@ -456,6 +456,9 @@ h1 {
   .pagina2:before {
     width: 60%;
   }
+  .imgLogoLetrasHarry {
+    width: 80%;
+  }
   .nav {
     width: 60%;
   }
@@ -474,7 +477,7 @@ h1 {
     width: auto;
   }
   .imgsPag1 {
-    width: 10%;
+    width: 84%;
   }
   .resenaPag1 {
     width: 80%;
@@ -488,7 +491,11 @@ h1 {
   .imgSeleccionP2 {
     width: 70%;
   }
+  .imgLogoLetrasHarry {
+    width: 80%;
+    text-align: center;
+  }
   .nav {
-    width: 70%;
+    width: 90%;
   }
 }
