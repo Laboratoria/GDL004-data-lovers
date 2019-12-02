@@ -8,7 +8,19 @@ header{
   font-size: 50px;
   color: goldenrod;
 }
-
+/* titulo */
+.title{
+  font-size: 30px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  color: goldenrod;
+}
+p#titulo{
+  align-self: center;
+  font-size: 5rem;
+}
 /*  LO QUE VA EN WELCOME */
 .welcomes{
   font-size: 30px;
@@ -21,19 +33,53 @@ header{
   border-radius: 25px;
 }
 /* botones */
+.buttons .button {
+  font-size: 16px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  border-radius: 20px;
+}
 .button{
-  padding: 15px;
-  background-color: #3D94F6;
+  background-color: transparent;
+  border: none;
+  color: gold;
+  padding: 15px 32px;
+  text-align: center;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+li {
+  display: inline;
+}
+li a{
+  display: block;
   font-family: 'Germania One', cursive;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 10px;
   font-size: 20px;
+  color:#FFAE00;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+  border-radius: 35px;
 }
-.button:hover{
-  background-color: #D09E2A;
+li a:hover {
+  background: #C78800;
+  background-image: -webkit-linear-gradient(top, #C78800, #010305);
+  background-image: -moz-linear-gradient(top, #C78800, #010305);
+  background-image: -ms-linear-gradient(top, #C78800, #010305);
+  background-image: -o-linear-gradient(top, #C78800, #010305);
+  background-image: linear-gradient(to bottom, #C78800, #010305);
+  -webkit-border-radius: 20px;
+  -webkit-transition-duration: 0.4s;
+  transation-duration: 0.4s;
+  text-decoration: none;
 }
-
 
 
 /* houses text */
@@ -83,33 +129,33 @@ crema claro ffe495 gris e8e2db naranja fda831
 
 select {
   font-family: 'Germania One', cursive;
-    position: relative;
-    margin-bottom: 15px;
+  position: relative;
+  margin-bottom: 15px;
 
-        width: 10%;
-        cursor: pointer;
-        padding: 8px 19px;
-        outline: 0;
-        border: 1px hidden #ffffff;
-        border-radius: 10px;
-        background: #d6ce90;
-        color: #130505;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-    }
-        .select::-ms-expand {
-            display: none;
-        }
-        .select:hover,
-        .select:focus {
-            color: #000000;
-            background: #d69b42;
-        }
-        .select:disabled {
-            opacity: 0.2;
-            pointer-events: none;
-        }
+  width: 10%;
+  cursor: pointer;
+  padding: 8px 19px;
+  outline: 0;
+  border: 1px hidden #ffffff;
+  border-radius: 10px;
+  background: #d6ce90;
+  color: #130505;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select::-ms-expand {
+  display: none;
+}
+.select:hover,
+.select:focus {
+  color: #000000;
+  background: #d69b42;
+}
+.select:disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
 
 /* ESPECIFICO DEL CONTENIDO */
 #content {

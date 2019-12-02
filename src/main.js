@@ -27,7 +27,7 @@ import { az,
     let myselect = document.getElementById('mySelect').value;
     // document.getElementById('content').innerHTML = myselect;
     document.getElementById('content').innerHTML = '';
-      switch (myselect) {
+    switch (myselect) {
       case '1':
       displayNames(az, potter);
       break;
