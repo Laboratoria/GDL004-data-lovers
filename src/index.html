@@ -1,14 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="main.js"></script>
-  </body>
+
+<head>
+      <meta charset="UTF-8">
+      <title>Nostalgia Pokemon</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="style.css" />
+      <style>
+            @import url('https://fonts.googleapis.com/css?family=Economica&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=News+Cycle&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+      </style>
+</head>
+
+<body>
+      <div id="root"></div>
+
+
+      <div id= "welcome">
+            <header>
+                  <div id="headerWelcome">
+                        <img id="logoHead" src="img/Pokemon_logo.png">
+                  </div>
+
+
+            </header>
+            <div id= "picWel">
+                  <img class="imageWelcome" src="img/AshPikachu.png">
+            </div>
+            <div id="cont">
+                  <div id="contentTex">
+                        <p id= "txtWelcome">¿Te has puesto nostálgico sobre tu infancia? ¡Es muy probable que por eso llegaras aquí!
+                        Vamos a recordar sobre tus pokemones favoritos</p>
+                  </div>
+            </div>
+            <nav>
+                  <div id="welcomeButton">
+                        <a href="#main"><img class="welcomeImageButton" src="img/pokeballButton.jpg"></a>
+                        <p class="textWelcomeButton">Inicio</p>
+                  </div>
+            </nav>
+      </div>
+
+      <!-- Pantalla de todas las categorias-->
+      <div id="main">
+            <header>
+                  <div id="mainHead"><img id="logo" src="img/Pokemon_logo.png"></div>
+            </header>
+
+            <section id="texto1">
+                  <article>
+                        <p>Entra a alguna de las categorías ¡y que vengan los recuerdos!</p>
+                  </article>
+            </section>
+
+            <section id="espacio">
+            </section>
+
+            <section>
+                  <div id="mainImage"><img class="mainPikachu" src="img/pikachu.png"> </div> </section> 
+                  
+            <section id="categories">
+                  
+                   <div id="Bgrass" class="contentBotona">
+                        <a href="#grass"> <img class="img" id="Grass" src="img/grass.png"> 
+                        </a> <div class="text">GRASS</div>
+                  </div>
+
+                  <div id="Bpoison" class="contentBotona">
+                        <a href="#poison"><img class="img" id="Poison" src="img/poison.png"> </a> 
+                        <div class="text">POISON</div>
+                  </div>
+
+                  <div id="Bfire" class="contentBotona">
+                        <a href="#fire"> <img class="img" id="Fire" src="img/fire.png"> </a> 
+                        <div class="text">FIRE</div>
+                  </div>
+
+                  <div id="Bflying" class="contentBotona">
+                        <a href="#flying"> <img class="img" id="Flying" src="img/flying.png"> </a> 
+                        <div class="text">FLYING</div>
+                  </div>
+
+                  <div id="Bwater" class="contentBotona">
+                        <a href="#water"><img class="img" id="Water" src="img/water.png"> </a> 
+                        <div class="text">WATER</div>
+                  </div>
+
+                  <div id="Bbug" class="contentBotona">
+                        <a href="#bug" ><img class="img" id="Bug" src="img/bug.png"> </a> 
+                        <div class="text">BUG</div>
+                  </div>
+
+                  <div id="Bnormal" class="contentBotona">
+                        <a href="#normal"> <img class="img" id="Normal" src="img/normal.png"> </a> 
+                        <div class="text">NORMAL</div>
+                  </div>
+
+                  <div id="Belectric" class="contentBotona">
+                        <a href="#electric"> <img class="img" id="Electric" src="img/electric.png"> </a> 
+                        <div class="text">ELECTRIC</div>
+                  </div>
+
+                  <div id="Bground" class="contentBotona">
+                        <a href="#ground"> <img class="img"  id="Ground" src="img/ground.png"> </a> 
+                        <div class="text">GROUND</div>
+                  </div>
+
+                  <div id="Bfighting" class="contentBotona">
+                        <a href="#fighting"><img class="img" id="Fighting" src="img/fighting.png"> </a> 
+                        <div class="text">FIGHTING </div>
+                  </div>
+      
+
+                  <div id="Bpsychic" class="contentBotona">
+                        <a href="#psychic"><img class="img" id="Psychic" src="img/psychic.png"> </a> 
+                        <div class="text">PYSCHIC</div>
+                  </div>
+
+                  <div id="Brock" class="contentBotona">
+                        <a href="#rock" ><img class="img" id="Rock" src="img/rock.png"> </a> 
+                        <div class="text">ROCK</div>
+                  </div>
+
+                  <div id="Bice" class="contentBotona">
+                        <a href="#ice" title="Ice"><img class="img" id="Ice" src="img/ice.png"> </a> 
+                        <div class="text">ICE</div>
+                  </div>
+
+                  <div id="Bghost" class="contentBotona">
+                        <a href="#ghost"><img class="img" id="Ghost" src="img/ghost.png"> </a> 
+                        <div class="text">GHOST</div>
+                  </div>
+      
+                  <div id="Bdragon" class="contentBotona">
+                        <a href="#dragon"><img class="img" id="Dragon" src="img/dragon.png"> </a> 
+                        <div class="text">DRAGON</div>
+                  </div>
+
+      </section>
+</div>
+
+
+      <!-- Pantalla de categorías  -->
+      <section>
+      <div id="grass">
+            <header id="grasshead">
+                <a href="#main" id="prueba">  <img src="img/Pokemon_logo.png" class="headerLogo"></a>
+            </header>
+            
+
+            <section id="contentGrass">
+                  <nav id="mainMenuGrass">
+                        <div class="buttonsMenu">
+                              <img class="iconPokebola" src="img/pokeball.png">
+                              <button class="botonUno" id="order">Ordenar AZ</button>
+                        </div>
+                        <div class="buttonsMenu">
+                              <img class="iconPokebola" src="img/pokeball.png">
+                              <button class="botonUno" id="reverseOrderButton"> Ordenar ZA</button>
+                        </div>
+                  </nav>
+                  <section id="poketypeGrass">
+                  </section>
+      
+      </section>
+            
+      <section id="grassImage">
+            </section>
+      </div>
+      </section>
+
+      <!--Screen in which the poekemons display random by category-->
+      <section id="categoryGrass"> 
+      </section>
+
+      <!--Screen in which the pokemos of a certain category display in order AZ-->
+      <section id= "grassOrder">
+      </section>
+
+      <!-- Screen of ZA-->
+      <section id="reverseOrder">
+      </section>
+
+      
+
+<!---------- VENTANA MODAL -------->
+<div class="modal" id="windowModal">
+      <div class="contentModal">
+            <div class="headerModal">
+                  <h2>encabezado modal</h2>
+                  <span class="close" id="close">&times;</span>
+            </div>
+            <div class="boddyModal">
+                  <p>este es el cuerpo de un modal</p>
+            </div>
+      </div>
+</div>
+
+      <script type="module" src="main.js"></script>
+</body>
+
 </html>

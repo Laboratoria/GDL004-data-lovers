@@ -1,0 +1,619 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+a{
+text-decoration:none;
+}
+
+
+.democlass {
+    margin: 1.5%;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px #C0BFBD;
+  }
+
+.cardClass{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+
+body{
+    font-family: 'News Cycle', sans-serif;
+    background-color:#ffe575; 
+}
+
+/*PANTALLA DE BIENVENIDA*/
+
+#welcome{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#headerWelcome{
+    width: 100%;
+}
+
+#logoHead{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#picWel{
+    width:100%;
+}
+
+.imageWelcome{
+    width: 40%;
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+}
+
+#contentTex{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 3%;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    padding: 10%;
+    margin: 3%;
+    margin-top: 0%;
+}
+
+#txtWelcome{
+    width: 80%;
+    font-size: 16px;
+    margin: auto;
+    text-align: justify;
+    line-height: 18px;
+}
+
+#welcomeButton{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.welcomeImageButton{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    margin-top: 12%;
+    transition-duration: 1s;
+}
+
+.welcomeImageButton:hover{
+    transform: rotate(180deg);
+}
+
+.textWelcomeButton{
+    font-size: 21px;
+    text-align: center;
+}
+
+/*PANTALLA DE CATEGORIAS*/
+
+#main{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    display: none;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 14px;
+}
+
+#mainHead{
+    width   : 100%;
+    height: 90px;
+}
+
+#logo{
+    width: 40%;
+    padding: 5%;
+}
+
+#texto1{
+    width: 45%;
+    height: 80px;
+    float: right;
+    font-size: 16px;
+    padding:20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: justify;
+    line-height: 21px;
+}
+
+#espacio{
+    width: 55%;
+    height: 100px;
+}
+
+#mainImage{
+    width: 100%;
+    height: 40%;
+}
+
+.mainPikachu{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#categories{
+    width: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin:auto;
+    border-radius: 10px; 
+}
+
+.contentBotona{
+    transition-duration: 1s;
+}
+
+.img{
+    width: 60px;
+    padding: 10px;
+    padding-bottom: 5px;
+    display: block;
+    transition-duration: 1s;
+}
+
+.img:hover{
+    transform: scale(1.5);
+}
+
+
+.text{
+    padding-top: 0px;  
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*-------Ventana modal----------
+------------------------------*/
+
+#windowModal{
+    display:none;
+    position: fixed;
+    z-index:1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.25);
+}
+
+
+.contentModal{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width: 85%;
+    height: 85%;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 15%;
+    animation-name: modal; 
+    animation-duration: 1s;
+}
+
+@keyframes modal{
+    from { scale: -0.20; opacity:0; }
+    to { scale: 0; opacity:1; }
+    }
+
+
+.headerModal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media all and (min-width:750px) and (max-width:1050px) and (orientation:portrait){
+    #logoHead{
+        width: 50%;
+        margin-top: 5%;
+    }
+    
+    .imageWelcome{
+        margin-top: 10%;
+    }
+
+    #contentTex{
+        padding: 8%;
+    }
+    
+    #txtWelcome{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
+    .welcomeImageButton{
+        width: 100px;
+        height: 100px;
+        margin-top: 0%;
+    }
+    
+    .welcomeImageButton:hover{
+        transform: rotate(180deg);
+    }
+    
+    .textWelcomeButton{
+        font-size: 28px;
+    }
+    
+    /*Pantalla de categorias*/
+
+    
+    #mainHead{
+        height: 45%;
+    }
+    
+    #texto1{
+        font-size: 28px;
+        margin:3%;
+        line-height: 30px;
+        margin-top: -3%;
+    }
+    
+    
+    #mainImage{
+        margin-top: 3%;
+    }
+    
+    
+    .img{
+        width: 110px;
+        margin: 10%;
+        margin-bottom: 0%;
+    }
+    
+    .text{
+        padding-top: 0px;  
+        font-size: 26px;
+    }
+}
+
+@media all and (max-width:749px) and (orientation:landscape){
+    
+#welcome{
+    display:block;
+    column-count: 2;
+}
+
+#headerWelcome{
+    column-span: all;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#logoHead{
+    width: 25%;
+    margin-top: 0%;
+}
+
+#picWel{
+    width:100%;
+}
+
+.imageWelcome{
+    width: 60%;
+}
+
+#contentTex{
+    width: 70%;;
+    padding: 5%;
+    margin: 3%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+#welcomeButton{
+    width: 40%;
+    column-span: all;
+
+}
+
+.welcomeImageButton{
+    margin-top: 3%;
+    transition-duration: 1s;
+}
+
+.welcomeImageButton:hover{
+    transform: rotate(180deg);
+}
+
+.textWelcomeButton{
+    font-size: 21px;
+    text-align: center;
+}
+
+/*PANTALLA DE CATEGORIAS*/
+
+#main{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    display: none;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 14px;
+}
+
+#mainHead{
+    width   : 100%;
+    height: 90px;
+}
+
+#logo{
+    width: 40%;
+    padding: 5%;
+}
+
+#texto1{
+    width: 45%;
+    height: 80px;
+    float: right;
+    font-size: 16px;
+    padding:20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: justify;
+    line-height: 21px;
+}
+
+#espacio{
+    width: 55%;
+    height: 100px;
+}
+
+#mainImage{
+    width: 100%;
+    height: 40%;
+}
+
+.mainPikachu{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#categories{
+    width: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin:auto;
+    border-radius: 10px; 
+}
+
+.contentBotona{
+    transition-duration: 1s;
+}
+
+.img{
+    width: 60px;
+    padding: 10px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.img:hover{
+    transform: scale(1.5);
+}
+
+
+.text{
+    padding-top: 0px;  
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*******************/
+    #mainHead{
+        height: 200px;
+    }
+
+    #logo{
+        width: 35%;
+        display: block;
+        margin:auto;
+        padding: 50px;
+    }
+
+    #texto1{
+        width: 100%;
+        height:   20%;
+        font-size: 21px;
+        text-align: justify;
+        margin: auto;
+        padding: 30px;
+
+    }
+
+    #espacio{
+        display: none;
+    }
+
+    #mainImage{
+        height: 150px;
+        float: left;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .mainPikachu{
+        height: 60%;
+    
+    }
+
+    #categories{
+        margin: 30px;
+        padding: 15px;
+    }
+
+    .img{
+        width: 75px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .text{
+        padding-top: 0px;  
+        font-size: 16px;
+    }
+
+
+}
+
+
+#buttonModal{
+    background-color:transparent;
+    border: transparent;
+}
+
+#grass{
+    display: none;
+    border-radius:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#grasshead{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;;
+}
+
+.headerLogo{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+
+.headerLogo:hover{
+    transform: scale(1.3);
+}
+
+/*
+#prueba{
+    display: flex;
+    justify-content: center;
+}
+*/
+
+#mainMenuGrass{
+width:50%;
+height: 110px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.buttonsMenu{
+    width: 70%;
+    height: 35px;
+    margin:2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.iconPokebola{
+    width: 25px;
+    height: 25px;
+}
+
+.botonUno{
+    margin-left: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    color:  #6D4141 ;
+    font-family: 'Economica', sans-serif;
+    font-size: 17px;
+}
+
+#grassOrder{
+    display: none;
+}
+
+.containerDiv{
+    width: 160px;
+    height: 260px;
+    margin:10px;
+    padding:5px;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: white;
+    border-width: 8px;
+    box-shadow: 2px 4px 10px #b4abab;
+    background: linear-gradient(to bottom right, rgb(255, 255, 255, 0.9), #FFD622, rgb(104, 178, 207));
+    }
+
+.numCard {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    background-color:rgb(243, 66, 66, 0.9);
+    border-radius: 12px;
+    color: white; 
+    height: 36px;
+    width: 25%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 5px;
+}
+
+.imgCard{
+    height: 300px;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3%;
+}
+
+.txtCard{
+    background-color: rgba(42, 100, 194, 0.8);
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 3%;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    height: 90px;
+}
+
+.sizePokeCard{
+    width: 70%;
+    height: 70%;
+}
