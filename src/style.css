@@ -59,6 +59,7 @@ input {
   width: 130px;
   height: 30px;
   border-width: 1px;
+  cursor: pointer;
 }
 
 .conocemas:hover {
@@ -127,10 +128,12 @@ input {
 
 .imgLogoLetrasHarry {
   text-align: center;
-  margin-left: 43%;
-  margin-right: auto;
-  position: relative;
-  width: 100px;
+  margin-left: 5%; 
+  margin-right: auto; 
+  position: absolute; 
+  left: 50%;
+  transform: translate(-50%);
+  width: 10%; 
 }
 
 .textoSeleccionaOpcion {
@@ -216,7 +219,7 @@ input {
   padding: 20px;
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.4s;
 }
 
@@ -235,12 +238,6 @@ input {
   font-family: "Vidaloka", serif;
   font-size: 20px;
 }
-.imgCasas:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-}
-
 .describeCasas {
   text-align: center;
 }
@@ -393,18 +390,10 @@ h1 {
   padding: 20px;
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-  cursor: pointer;
   justify-content: space-around;
   transition: 0.4s;
   font-family: "Vidaloka", serif;
   border-color: #333;
-}
-
-.card:hover {
-  transform: scale(0.9, 0.9);
-
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
 .img-personajes {
@@ -442,7 +431,7 @@ h1 {
     width: 80%;
   }
   .pagina1 {
-    width: 70%;
+    width: 95%;
   }
   .contenedorImgsYtxtSeleccionP2 {
     width: 70%;
@@ -457,7 +446,8 @@ h1 {
     width: 60%;
   }
   .imgLogoLetrasHarry {
-    width: 80%;
+     width: 50%; 
+    
   }
   .nav {
     width: 60%;
@@ -491,10 +481,11 @@ h1 {
   .imgSeleccionP2 {
     width: 70%;
   }
-  .imgLogoLetrasHarry {
+  /*.imgLogoLetrasHarry {
+
     width: 80%;
     text-align: center;
-  }
+  }*/
   .nav {
     width: 90%;
   }
