@@ -116,3 +116,55 @@ selPersonajes.addEventListener('click', () => {
 botonHombres.addEventListener('click', () => mostrarPersonajes(filHombres));
 botonMujeres.addEventListener('click', () => mostrarPersonajes(filMujeres));
 botonOrdenar.addEventListener('click', () => mostrarPersonajes(ordenar));
+
+const url = 'http://localhost:5000/data/potter/potter.json'
+fetch(url)
+  .then(response => response.json())
+  .then((data) => {
+
+    data.forEach(element => {
+      console.log(element.house)
+    });
+
+  })
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+  // The type of chart we want to create
+  type: 'line',
+
+  // The data for our dataset
+  data: {
+    labels: ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin'],
+    datasets: [{
+      label: 'Personajes  por casas',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45]
+    }]
+  },
+
+  // Configuration options go here
+  options: {}
+});
+
+
+let data = [3, 1, 2, 1]
+let labels = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
+
+
+//  that make your chart.
+
+var myPieChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    datasets: [{
+      data: data,
+      backgroundColor: ['#66c2a5', '#fc8d62', '#8da0cb', '#e78ac3'],
+      borderColor: 'rgb(255, 255, 255)',
+    }],
+
+    labels: labels
+  },
+  options: {}
+});

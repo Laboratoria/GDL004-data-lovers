@@ -16,6 +16,7 @@
 /* PAGINA 1 */
 .pagina1 {
   background-image: url("images/hary\ potter\ fondo\ batalla.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

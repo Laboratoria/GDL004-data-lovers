@@ -1,3 +1,5 @@
+
+
 export const todosLosPersonajes = (data) => {
   const personajes = [];
 
@@ -16,3 +18,18 @@ export const hombres = (data) => data.filter((personaje) => personaje.gender ===
 export const mujeres = (data) => data.filter((personaje) => personaje.gender === 'female');
 
 export const ordenarPorNombre = (data) => data.sort((a, b) => a.name.localeCompare(b.name));
+
+export const ordenarPorCasas = (data) => {
+  const output = {};
+
+  data.forEach (element => {
+    if(element.house in output) {
+      output[element.house] += 1;
+    } else {
+      output[element.house] = 1;
+    }
+  });
+    return output
+}
+
+
