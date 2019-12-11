@@ -22,14 +22,17 @@ export const ordenarPorNombre = (data) => data.sort((a, b) => a.name.localeCompa
 export const ordenarPorCasas = (data) => {
   const output = {};
 
-  data.forEach (element => {
-    if(element.house in output) {
+  data.forEach(element => {
+    if (element.house == "") {
+      return;
+    }
+    if (element.house in output) {
       output[element.house] += 1;
     } else {
       output[element.house] = 1;
-    }
+    } 
   });
-    return output
+  return output
 }
 
 

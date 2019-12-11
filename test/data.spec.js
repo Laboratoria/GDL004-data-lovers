@@ -219,36 +219,57 @@ describe('ordenarPorNombre', () => {
 });
 
 describe('ordenarPorNombre', () => {
+  it('deberia ignorar los valores vacios de casas', () => {
+    // organizar arrange
+    const listhouse = [
+      {
+        "house": "",
+      },
+      {
+        "house": "Hufflepuff",
+      },
+    ];
+
+    const expectedResults =
+    {
+      "Hufflepuff": 1,
+    };
+    // actuar    act
+    const results = ordenarPorCasas(listhouse);
+    // afirmar   assert
+    expect(results).toEqual(expectedResults);
+  });
+
   it('deberia regresar la lista por orden de casas', () => {
     // organizar arrange
-const listhouse = [
-  {
-    "house": "Gryffindor",
-  },
-  {
-    "house": "Hufflepuff",
-  },
-  {
-    "house": "Ravenclaw",
-  },
-  {
-    "house": "Slytherin",
-  },
-  {
-    "house": "Gryffindor",
-  },
-];
+    const listhouse = [
+      {
+        "house": "Gryffindor",
+      },
+      {
+        "house": "Hufflepuff",
+      },
+      {
+        "house": "Ravenclaw",
+      },
+      {
+        "house": "Slytherin",
+      },
+      {
+        "house": "Gryffindor",
+      },
+    ];
 
-const expectedResults = 
-  {
-    "Gryffindor": 2,
-    "Hufflepuff": 1,
-    "Slytherin": 1,
-    "Ravenclaw": 1,
-  };
-// actuar    act
-const results = ordenarPorCasas(listhouse);
-// afirmar   assert
-expect(results).toEqual(expectedResults);
-});
+    const expectedResults =
+    {
+      "Gryffindor": 2,
+      "Hufflepuff": 1,
+      "Slytherin": 1,
+      "Ravenclaw": 1,
+    };
+    // actuar    act
+    const results = ordenarPorCasas(listhouse);
+    // afirmar   assert
+    expect(results).toEqual(expectedResults);
+  });
 });
