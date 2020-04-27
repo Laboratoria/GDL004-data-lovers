@@ -1,7 +1,7 @@
 {
   "name": "data-lovers",
   "version": "1.0.0",
-  "main": "src/index.html",
+  "main": "index.html",
   "license": "MIT",
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",
@@ -11,7 +11,7 @@
     "test": "jest --verbose --coverage",
     "jest": "jest --verbose --coverage",
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
-    "start": "serve ./src"
+    "start": "serve ./"
   },
   "dependencies": {
     "@babel/core": "^7.6.2",
