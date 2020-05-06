@@ -52,4 +52,4 @@ a los personajes por su nombre
 
 https://www.figma.com/file/jNAfgu5vycxOJvDDwDtCH5/Data-lovers?node-id=0%3A1
 
-![Sitio] (https://reginaorozco.github.io/GDL004-data-lovers/src/index.html)
+[Sitio] (https://reginaorozco.github.io/GDL004-data-lovers/src/index.html)
