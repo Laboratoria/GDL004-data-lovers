@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body background="images/fondo de estrellas.jpg">
+  <center><img src="./images/Harry potter logo.png" class= "claseImagen"></center>
+
+  <form class= "filtrarForm">
+    <select id="tiposDeCasa" class= "button">
+      <option>Select house</option>
+      <option value="Gryffindor">Gryffindor</option>
+      <option value="Slytherin">Slytherin</option>
+      <option value="Hufflepuff">Hufflepuff</option>
+      <option value="Ravenclaw">Ravenclaw</option>
+    </select>
+    <input type="button" id="filtrar" value="Filter" class="button"/>
+  </form>
+  <br>
+  <form id="ordenar">
+    <input type="button" id="orderAZ" value="Order A → Z " class="button" />
+    <input type="button" id="orderZA" value="Order Z → A" class="button" />
+  </form>
+
+  <div class="personajesOrdenados" id="seccionDeDatos"></div>
+
+  <template id="templatePersonajes">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div id="infoMostrada" class="infoMostrada">
+          <img class="img">
+          <p><span class="nameSpan"></span> </p>
+          <p>House: <span class="houseSpan"></span></p>
+
+        </div>
+        <div id="infoOculta" class="masInfo">
+          <p>Gender: <span class="genderSpan"></span></p>
+          <p>Ancestry: <span class="ancestrySpan"></span></p>
+          <p>Patronus: <span class="patronusSpan"></span></p>
+          <p>Wand:</p>
+          <ul>
+            <li>Wood: <span class="woodSpan"></span></li>
+            <li>Core: <span class="coreSpan"></span></li>
+            <li>Length: <span class="lengthSpan"></span></li>
+          </ul>
+          <p>Eye Colour: <span class="eyeColourSpan"></span></p>
+          <p>Hair Colour: <span class="hairColourSpan"></span></p>
+          <p><span class="aliveSpan"></span></p>
+          <p>Actor: <span class="actorSpan"></span></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>
